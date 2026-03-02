@@ -434,7 +434,7 @@
     width: 34px;
     height: auto;
     display: block;
-    margin: 18px auto 0;
+    margin: 18px auto;
     }
 
     /* Right column content */
@@ -776,7 +776,7 @@ COOKIE BANNER
     position:fixed;
     top: 0;
     left: 30%;
-    transform: translateY(200px);
+    transform: translateY(150px);
     width: 50%;
     height: 50vh;
     background-color: white;
@@ -1257,4 +1257,8 @@ COOKIE BANNER
     left: 5%;
     width: 90%;
     }
+
+    .buttons {
+    flex-wrap: wrap;
+    } 
 }
