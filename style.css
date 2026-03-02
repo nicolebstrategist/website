@@ -6,7 +6,7 @@
     body{
     font-family: "Outfit", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
     line-height: 1.55;
-    color: #3a2a1f;
+    color: #4d291a;
     background: #fbf3e6;
     }
 
@@ -139,7 +139,7 @@
 
     .logo img{
     width: 230px;
-    height: auto;
+    height: 61.95px;
     }
 
     .menu{
@@ -161,7 +161,7 @@
     }
     .navbar .social-links img{
     width: 22px;
-    height: auto;
+    height: 22px;
     }
 
     .burger-menu{
@@ -365,21 +365,21 @@
     SERVICES + APPROACH (2 COL)
     ========================= */
     #services{
-  /* full-bleed section */
     max-width: none;
     width: 100%;
-    margin: 0;
     min-height: 100vh;
-
-    /* full-width split background + divider line */
     background:  #fffaf4;
-    padding-left: 160px;
-    padding-top: 30px;
+    padding: 0px;
+    align-content: center;
+    }
 
-    display: grid;
-    column-gap: 65px;
-    row-gap: 34px;
+    .services-inner{
     align-items: start;
+    max-width: var(--container);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
     }
 
     /* Service box (left) */
@@ -438,16 +438,8 @@
     }
 
     /* Right column content */
-    #services .approach{
-    grid-column: 2;
-    justify-self: start;
-    width: min(560px, 100%);
-    padding-top: 0;
-    text-align: left;
-    }
 
     #services .approach p{
-    max-width: 520px;
     line-height: 1.7;
     text-align: justify;
     margin-top: 14px;
@@ -645,7 +637,6 @@
     width: 100%;
     max-width: 560px;
     height: auto;
-    box-shadow: var(--shadow);
     }
 
     /* =========================
@@ -1075,7 +1066,7 @@ COOKIE BANNER
 
     /* CTA inside dropdown */
     .mobile-cta{
-    margin: 14px 6px 6px;
+    margin: 14px 6px 14px;
     width: calc(100% - 12px);
     max-width: 360px;
     padding: 14px 18px;
@@ -1090,7 +1081,7 @@ COOKIE BANNER
 
     #mobile-menu a.language img{
         width: 22px;
-        height: auto;
+        height: 22px;
     }
 
     /* hero */
@@ -1105,11 +1096,13 @@ COOKIE BANNER
     /* about */
     .about-highlight{
     padding: 44px 0 52px;
+    margin-bottom: 0px;
     }
 
     .about-highlight .phrase{
         font-size: 25px; /* big like your mobile mockup */
         line-height: 1.05;
+        padding: 0 15px;
     }
 
     .about-inner{
@@ -1147,7 +1140,7 @@ COOKIE BANNER
 
     #services .transformation{
         grid-column: 1 / -1;
-        margin-top: 18px;
+        margin-top: 15px;
         text-align: center;
     }
 
@@ -1158,7 +1151,11 @@ COOKIE BANNER
     }
 
     #services .transformation .bee-icon{
-        margin: 10px auto 0;
+        margin: 10px auto 50px;
+    }
+
+    .services-inner{
+        display: block;
     }
 
     #services .approach{
@@ -1252,7 +1249,7 @@ COOKIE BANNER
 
     .footer-copy {font-size: 14px; text-align: center;}
 
-    .social-links{justify-content: center;}
+    .social-links{justify-content: center; margin: 5px}
     }
 
     h4{font-size: 20px;}
