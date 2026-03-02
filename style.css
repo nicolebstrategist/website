@@ -6,7 +6,7 @@
     body{
     font-family: "Outfit", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
     line-height: 1.55;
-    color: #4d291a;
+    color: #3a2a1f;
     background: #fbf3e6;
     }
 
@@ -149,7 +149,7 @@
     }
     .menu a{
     color: var(--accent);
-    font-weight: 700;
+    font-weight: 500;
     font-size: 19px;
     }
     .menu a:hover{ opacity: .85; }
@@ -728,7 +728,6 @@ COOKIE BANNER
 }
 
 .cookie-banner #learn-more {
-    color: white;
     text-decoration: underline;
 }
 
@@ -754,7 +753,7 @@ COOKIE BANNER
 
 #accept-all {
     padding: 10px 13px;
-    background-color: #F9CF04;
+    background-color: #fbf3e6;
     color: black;
 }
 
@@ -775,8 +774,8 @@ COOKIE BANNER
 #preference-modal {
     position:fixed;
     top: 0;
-    left: 5%;
-    transform: translateY(250px);
+    left: 30%;
+    transform: translateY(200px);
     width: 90%;
     height: 50vh;
     background-color: white;
@@ -794,7 +793,7 @@ COOKIE BANNER
 
 #preference-modal h2 {
     margin-bottom: 30px;
-    font-size: 20px;
+    font-size: 28px;
 }
 
 #preference-modal ul {
@@ -848,7 +847,7 @@ COOKIE BANNER
 }
 
 #save-preferences:hover {
-    color: white;
+    text-decoration: underline;
 }
 
 #preference-accept-all {
@@ -936,7 +935,7 @@ COOKIE BANNER
 
     body.legal .legal-toc a{
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 500;
     color: var(--accent);
     text-decoration: underline;
     text-underline-offset: 4px;
@@ -1102,7 +1101,7 @@ COOKIE BANNER
     .about-highlight .phrase{
         font-size: 25px; /* big like your mobile mockup */
         line-height: 1.05;
-        padding: 0 15px;
+        padding: 0 28px;
     }
 
     .about-inner{
