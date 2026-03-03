@@ -794,6 +794,7 @@ COOKIE BANNER
 #preference-modal h2 {
     margin-bottom: 30px;
     font-size: 28px;
+    text-align: center;
 }
 
 #preference-modal ul {
@@ -838,7 +839,7 @@ COOKIE BANNER
     padding: 10px 10px;
     border: none;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 13px;
     border-radius: 5px;
     background-color: transparent;
     color: black;
