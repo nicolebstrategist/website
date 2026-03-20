@@ -352,7 +352,7 @@
     .values{
     margin-top: 14px;
     display: grid;
-    gap: 10px;
+    gap: 5px;
     }
 
     .values li{
