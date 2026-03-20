@@ -1,32 +1,33 @@
-    /* =========================
-    RESET + BASE
-    ========================= */
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body{
+/* =========================
+RESET + BASE
+========================= */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; overflow-x: hidden; }
+body{
     font-family: "Outfit", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
     line-height: 1.55;
     color: #3a2a1f;
     background: #fbf3e6;
-    }
+    overflow-x: hidden;
+    padding-top: 110px; /* space for fixed header */
+}
 
-    a { color: inherit; text-decoration: none;}
-    ul { list-style: none;}
+a { color: inherit; text-decoration: none; }
+ul { list-style: none; }
 
-    section{
+section{
     min-height: auto;
     max-width: var(--container);
     margin: 0 auto;
     padding: 20px;
-    }
+}
 
-    /* DO NOT force all images to 100% */
-    img{ display: block; height: auto; }
+img{ display: block; height: auto; }
 
-    /* =========================
-    TOKENS
-    ========================= */
-    :root{
+/* =========================
+TOKENS
+========================= */
+:root{
     --container: 1200px;
     --accent: #f36a2e;
     --ink: #4d291a;
@@ -34,71 +35,75 @@
     --pill: 999px;
     --radius: 26px;
     --shadow: 0 12px 28px rgba(0,0,0,.08);
-    }
+}
 
-    h1{
+h1{
     font-family: "Playfair Display", Georgia, "Times New Roman", serif;
     font-weight: 500;
     font-size: 42px;
     letter-spacing: .2px;
     color: #f36a2e;
-    }
+}
 
-    h2{
+h2{
     font-family: "Playfair Display", Georgia, "Times New Roman", serif;
     font-weight: 500;
-    font-size: 44px;
+    font-size: 40px;
     letter-spacing: .2px;
     color: #f36a2e;
-    }
+}
 
-    h3{
+h3{
     font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
     font-weight: 500;
     font-size: 28px;
     letter-spacing: .2px;
     color: #f36a2e;
-    }
+}
 
-    h4{
+h4{
     font-family: "Outfit", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
     font-weight: 600;
     font-size: 24px;
     letter-spacing: .2px;
     margin-top: 14px;
-    }
+}
 
-    p{
+p{
     font-size: 18px;
     color: var(--muted);
     text-align: justify;
-    }
+}
 
-    li{
+li{
     font-size: 18px;
-    }
+}
 
-    .phrase{
-        text-align: center;
-    }
+.phrase{
+    text-align: center;
+}
 
-    .bee-icon {
-    width: 34px;      /* adjust to your previous preferred size */
+.bee-icon {
+    width: 34px;
     height: auto;
     margin: 30px auto 0;
     display: block;
 }
 
-    /* Utility container for sections that should match mockup width */
-    #hero, #about, #services, #library, #contact, .footer-inner, .navbar, #mobile-menu{
+/* removed .navbar from this rule */
+#hero, #about, #services, #library, #contact, .footer-inner, #mobile-menu{
     max-width: var(--container);
     margin: 0 auto;
-    }
+}
 
-    /* =========================
-    BUTTONS
-    ========================= */
-    .cta-button{
+section{
+    scroll-margin-top: 90px;
+}
+
+/* =========================
+BUTTONS
+========================= */
+.cta-button{
     background: var(--accent);
     color: #fff;
     border: 0;
@@ -109,64 +114,81 @@
     letter-spacing: .3px;
     cursor: pointer;
     white-space: nowrap;
-    }
-    .cta-button:hover{ opacity: .92; text-decoration: underline;}
+}
 
-    a.cta-button{
+.cta-button:hover{
+    opacity: .92;
+    text-decoration: underline;
+}
+
+a.cta-button{
     display: inline-flex;
     align-items: center;
     justify-content: center;
     line-height: 1;
     text-align: center;
     font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-    }
+}
 
-    /* =========================
-    HEADER / NAV
-    ========================= */
-    header{
-    padding: 18px 28px 0;
+/* =========================
+HEADER / NAV
+========================= */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
     background: #fbf3e6;
-    }
+    padding: 18px 0 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,.04);
+}
 
-    .navbar{
+.navbar{
+    width: 100%;
+    max-width: var(--container);
+    margin: 0 auto;
+    padding: 0 28px 12px;
     display: grid;
-    grid-template-columns: 220px 1fr auto auto; /* logo | menu | social | cta | burger */
+    grid-template-columns: 220px 1fr auto auto;
     align-items: center;
     gap: 22px;
-    }
+}
 
-    .nav-cta{ display: block; }
+.nav-cta{ display: block; }
 
-    .logo img{
+.logo img{
     width: 230px;
     height: 61.95px;
-    }
+}
 
-    .menu{
+.menu{
     display: flex;
     justify-content: flex-end;
     gap: 20px;
-    }
-    .menu a{
+}
+
+.menu a{
     color: var(--accent);
-    font-weight: 500;
+    font-weight: 600;
     font-size: 17px;
     font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-    }
-    .menu a:hover{ opacity: .85; }
+}
 
-    .navbar .social-links{
+.menu a:hover{ opacity: .85; }
+
+.navbar .social-links{
     display: flex;
     align-items: center;
     gap: 12px;
-    }
-    .navbar .social-links img{
+}
+
+.navbar .social-links img{
     width: 22px;
     height: 22px;
-    }
+}
 
-    .burger-menu{
+.burger-menu{
     display: none;
     font-size: 28px;
     cursor: pointer;
@@ -174,258 +196,245 @@
     line-height: 1;
     padding: 6px 8px;
     border-radius: 10px;
-    }
+}
 
-    /* Mobile dropdown menu (your JS toggles display) */
-    .mobile-menu{
+/* Mobile dropdown menu */
+.mobile-menu{
     display: none;
-    margin-top: 12px;
+    margin-top: 0;
     padding: 14px 16px;
-    border-radius: 18px;
-    background: rgba(255,255,255,.70);
+    border-radius: 0 0 18px 18px;
+    background: rgba(255,255,255,.96);
     backdrop-filter: blur(6px);
     box-shadow: var(--shadow);
-    }
+}
 
-    #mobile-menu a{
+#mobile-menu a{
     display: block;
     padding: 10px 6px;
     font-weight: 600;
     color: var(--accent);
     text-align: center;
     font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-    }
+}
 
-    #mobile-menu a.cta-button,
-    #mobile-menu a.mobile-cta{
+#mobile-menu a.cta-button,
+#mobile-menu a.mobile-cta{
     color: #fff;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-    }
+}
 
-    #mobile-menu a.cta-button{
-        font-size: 14px;
-    }
+#mobile-menu a.cta-button{
+    font-size: 14px;
+}
 
-    .mobile-cta{
-    width:100%;
-    text-align:center;
-    margin:18px 0 14px;
-    padding:16px 18px;
-    font-size:16px;        /* make text fit */
-    line-height:1.2;
-    }
+.mobile-cta{
+    width: 100%;
+    text-align: center;
+    margin: 18px 0 14px;
+    padding: 16px 18px;
+    font-size: 16px;
+    line-height: 1.2;
+}
 
-    .mobile-social{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:14px;
-    padding-top:6px;
-    }
+.mobile-social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    padding-top: 6px;
+}
 
-    .mobile-social img{
-    width:22px;
-    height:auto;
-    display:block;
-    }
+.mobile-social img{
+    width: 22px;
+    height: auto;
+    display: block;
+}
 
-    /* =========================
-    HERO (FIX: NO OVERLAY)
-    ========================= */
-    #hero{
+/* =========================
+HERO
+========================= */
+#hero{
     display: grid;
     grid-template-columns: 0.9fr 1.1fr;
     justify-items: center;
     gap: 50px;
     align-items: center;
     text-align: left;
-    position: static; /* remove overlay behaviour */
+    position: static;
     min-height: 90vh;
-    }
+}
 
-    .hero-image{
+.hero-image{
     width: 100%;
     height: auto;
     box-shadow: none;
-    }
+}
 
-    .hero-text{
-    position: static;        /* critical */
-    transform: none;         /* critical */
-    top: auto; left: auto;   /* critical */
+.hero-text{
+    position: static;
+    transform: none;
+    top: auto;
+    left: auto;
     color: var(--ink);
     max-width: 560px;
     display: flex;
     flex-direction: column;
-    }
+}
 
-    .hero-text .cta-button{
-        align-self: center;   /* centers horizontally inside the text column */
-        margin-top: 15px;
-    }
+.hero-text .cta-button{
+    align-self: center;
+    margin-top: 15px;
+}
 
-    .hero-text h1{
+.hero-text h1{
     color: var(--accent);
     font-size: 42px;
     line-height: 1.05;
     margin-bottom: 18px;
-    }
+}
 
-    .hero-text p{ margin-bottom: 14px; }
+.hero-text p{ margin-bottom: 14px; }
 
-    /* =========================
-    ABOUT (2 COL)
-    ========================= */
-    
-    #about{
-  /* full page section, NOT max-width */
-    padding: 0; /* highlight controls its own spacing */
+/* =========================
+ABOUT
+========================= */
+#about{
+    padding: 0;
     min-height: 100vh;
-    }
+}
 
-/* Full-bleed white block */
-    .about-highlight{
-    background: #fffaf4; 
-
-    /* make it span the full viewport width even if the page uses centered containers */
+.about-highlight{
+    background: #fffaf4;
     width: 100vw;
     margin-left: calc(50% - 50vw);
     margin-bottom: 10px;
-
     padding: 56px 0 56px;
     text-align: center;
-    }
+}
 
-    .about-highlight .phrase{
+.about-highlight .phrase{
     max-width: var(--container);
     margin: 0 auto;
     padding: 0 28px;
-
     font-family: "Playfair Display", Georgia, "Times New Roman", serif;
     color: var(--accent);
     font-size: 35px;
     line-height: 1.2;
-    text-align: center; /* override your global justify */
-    }
+    text-align: center;
+}
 
-    .about-highlight .bee-icon{
+.about-highlight .bee-icon{
     width: 34px;
     margin: 18px auto 0;
-    }
+}
 
-    /* Main two-column area */
-    .about-inner{
+.about-inner{
     max-width: var(--container);
     margin: 0 auto;
-
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 70px;
     align-items: center;
-    }
+}
 
-    .about-content p{
+.about-content p{
     margin-top: 14px;
-    text-align: justify;        
+    text-align: justify;
     color: var(--muted);
     max-width: 720px;
-    }
+}
 
-    /* Right column */
-
-    .about-box h3{
+.about-box h3{
     font-size: 26px;
     color: var(--accent);
     text-align: center;
     margin: 18px 0 10px;
-    }
+}
 
-    .about-box p{
+.about-box p{
     text-align: center;
     color: var(--muted);
-    }
+}
 
-    .values{
+.values{
     margin-top: 14px;
     display: grid;
     gap: 5px;
-    }
+}
 
-    .values li{
-    text-align: left;
+.values li{
     color: var(--muted);
     text-align: center;
-    }
+}
 
-    .values b{
+.values b{
     color: var(--ink);
     font-weight: 800;
-    }
+}
 
-    /* =========================
-    SERVICES + APPROACH (2 COL)
-    ========================= */
-    #services{
+/* =========================
+SERVICES
+========================= */
+#services{
     max-width: none;
     width: 100%;
     min-height: 100vh;
-    background:  #fffaf4;
-    padding: 0px;
+    background: #fffaf4;
+    padding: 0;
     align-content: center;
-    }
+}
 
-    .services-inner{
+.services-inner{
     align-items: start;
     max-width: var(--container);
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 70px;
-    }
+}
 
-    /* Service box (left) */
-    #services .service-box{
+#services .service-box{
     grid-column: 1;
     justify-self: center;
     width: min(560px, 100%);
     border: 2px solid rgba(243,106,46,.80);
     border-radius: 26px;
-    padding: 20px 20px;
+    padding: 20px;
     background: transparent;
     margin-top: 25px;
-    }
+}
 
-    #services .service-box h3{
+#services .service-box h3{
     color: var(--accent);
     font-size: 24px;
     font-weight: 600;
     text-align: center;
     margin: 22px 0 8px;
-    }
+}
 
-    #services .service-box h3:first-child{ margin-top: 14px; }
+#services .service-box h3:first-child{ margin-top: 14px; }
 
-    #services .service-box p{
+#services .service-box p{
     text-align: center;
     margin: 0 auto;
     max-width: 440px;
     line-height: 1.6;
-    }
+}
 
-    /* Transformation directly under the box (left) */
-    #services .transformation{
+#services .transformation{
     grid-column: 1;
     justify-self: center;
     width: min(560px, 100%);
     margin-top: 10px;
     text-align: center;
-    }
+}
 
-    #services .transformation .phrase{
+#services .transformation .phrase{
     font-family: "Playfair Display", Georgia, "Times New Roman", serif;
     color: var(--accent);
     font-size: 35px;
@@ -433,68 +442,58 @@
     text-align: center;
     margin-top: 50px;
     margin-bottom: 50px;
-    }
+}
 
-    #services .transformation .bee-icon{
+#services .transformation .bee-icon{
     width: 34px;
     height: auto;
     display: block;
     margin: 18px auto;
-    }
+}
 
-    /* Right column content */
-
-    #services .approach p{
+#services .approach p{
     line-height: 1.7;
     margin-top: 14px;
-    }
+}
 
-    #services .approach h3{
+#services .approach h3{
     color: var(--accent);
     font-size: 26px;
     font-weight: 600;
     margin: 15px 0 8px;
     text-align: center;
-    }
+}
 
-    #services .approach .text-approach{
+#services .approach .text-approach{
     text-align: center;
-    }
+}
 
-    /* =========================
-    LIBRARY
-    ========================= */
-
-    #library{
+/* =========================
+TESTIMONIALS
+========================= */
+#testimonials{
     display: none;
     padding: 72px 28px;
     align-content: center;
-    }
+}
 
-    #library h2{
-    font-size: 56px;            /* match your other section titles */
+#testimonials h2{
+    font-size: 56px;
     margin-bottom: 24px;
-    }
+}
 
-    /* White block like the highlight section */
-    #library .carousel-container{
+#testimonials .carousel-container{
     position: relative;
-    border-radius: 0;           /* highlight is full-width rectangle */
+    border-radius: 0;
     padding: 46px 28px 46px;
-    }
-
-    /* Keep the content aligned with your site container, but let the white go full width */
-    #library .carousel-container{
     width: 100vw;
     margin-left: calc(50% - 50vw);
     margin-right: calc(50% - 50vw);
-    }
+}
 
-    /* Inner grid stays in the container width */
-    #library .carousel-slide{
+#testimonials .carousel-slide{
     max-width: var(--container);
     margin: 0 auto;
-
     display: grid;
     grid-template-columns: repeat(3, 280px);
     grid-template-rows: auto auto;
@@ -502,19 +501,18 @@
     column-gap: 100px;
     row-gap: 30px;
     align-items: start;
-    }
+}
 
-    /* Put images on row 1, buttons on row 2 */
-    #library .carousel-slide img{
+#testimonials .carousel-slide img{
     grid-row: 1;
     width: 280px;
     height: 390px;
     object-fit: cover;
     border-radius: 12px;
     box-shadow: var(--shadow);
-    }
+}
 
-    #library .carousel-slide a.carousel-button{
+#testimonials .carousel-slide a.carousel-button{
     grid-row: 2;
     justify-self: center;
     width: 160px;
@@ -528,10 +526,9 @@
     font-weight: 800;
     font-size: 12px;
     letter-spacing: .3px;
-    }
+}
 
-    /* Arrows sit outside the grid, vertically centred */
-    #library .carousel-navigation{
+#testimonials .carousel-navigation{
     position: absolute;
     top: 50%;
     left: 0;
@@ -541,9 +538,9 @@
     justify-content: space-between;
     padding: 0 22px;
     pointer-events: none;
-    }
+}
 
-    #library .carousel-navigation button{
+#testimonials .carousel-navigation button{
     pointer-events: auto;
     border: 0;
     background: transparent;
@@ -551,167 +548,164 @@
     color: rgba(243,106,46,.60);
     cursor: pointer;
     padding: 8px 10px;
-    }
+}
 
-    #library .carousel-navigation button:hover{
+#testimonials .carousel-navigation button:hover{
     color: rgba(243,106,46,.95);
-    }
+}
 
-    /* Bee under the block */
-    #library > div:last-child{
+#testimonials > div:last-child{
     display: flex;
     justify-content: center;
-    }
+}
 
-    /* =========================
-    CONTACT 
-   ========================= */
-
-    #contact{
+/* =========================
+CONTACT
+========================= */
+#contact{
     width: 100%;
     max-width: none;
     margin: 0;
     padding: 110px 0;
     align-items: center;
     min-height: 90vh;
-    }
+}
 
-    /* Inner container matches the site width */
-    #contact .contact-inner{
+#contact .contact-inner{
     max-width: var(--container);
     margin: 0 auto;
-
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 90px;
-    align-items: center; /* this is the vertical centring */
-    }
+    align-items: center;
+}
 
-    /* Left column stacked nicely */
-    #contact .contact-left{
+#contact .contact-left{
     display: flex;
     flex-direction: column;
     gap: 50px;
     align-items: center;
-    }
+}
 
-    #contact h2{
+#contact h2{
     margin: 0;
     color: var(--accent);
-    font-size: 44px;      /* closer to your mockup scale */
+    font-size: 44px;
     line-height: 0.95;
     text-align: left;
-    }
+}
 
-    #contact .contact-info{
+#contact .contact-info{
     display: flex;
     flex-direction: column;
     gap: 12px;
-    }
+}
 
-    #contact p{
+#contact p{
     margin: 0;
     text-align: center;
-    }
+}
 
-    #contact p b{
+#contact p b{
     color: var(--ink);
     font-weight: 800;
-    }
+}
 
-    /* CTA sits under contact info */
-    #contact .cta-button{
+#contact .cta-button{
     display: inline-flex;
     align-items: center;
     justify-content: center;
-
     width: max-content;
     padding: 14px 26px;
     margin-top: 6px;
-    }
+}
 
-    /* Bee placement */
-    #contact .bee-icon{
-    margin-top: 0px;
-    }
+#contact .bee-icon{
+    margin-top: 0;
+}
 
-    /* Right column image */
-    #contact .contact-right{
+#contact .contact-right{
     display: flex;
     justify-content: flex-end;
-    }
+}
 
-    #contact .contact-image{
+#contact .contact-image{
     width: 100%;
     max-width: 560px;
     height: auto;
-    }
+}
 
-    /* =========================
-    FOOTER
-    ========================= */
-    .site-footer{
+/* =========================
+FOOTER
+========================= */
+.site-footer{
     background: var(--accent);
     color: #fff;
     padding: 18px 28px 14px;
-    }
+}
 
-    .footer-inner{
+.footer-inner{
     display: grid;
     grid-template-columns: 1fr auto;
     grid-template-areas:
         "social right"
-        "copy   right";
+        "copy right";
     gap: 10px 36px;
     align-items: start;
-    }
+}
 
-    .site-footer .social-links{
+.site-footer .social-links{
     grid-area: social;
     display: flex;
     align-items: center;
     gap: 15px;
-    }
-    .site-footer .social-links img{
+}
+
+.site-footer .social-links img{
     width: 22px;
     height: auto;
-    }
+}
 
-    .footer-right{
+.footer-right{
     grid-area: right;
     display: flex;
     flex-direction: column;
     gap: 10px;
     align-items: flex-end;
-    }
+}
 
-    .footer-nav, .footer-legal{
+.footer-nav, .footer-legal{
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
     gap: 18px;
-    }
+}
 
-    .footer-nav{
-            font-weight: 600;
-    }
+.footer-nav{
+    font-weight: 600;
+}
 
-    .footer-nav a:hover{ opacity: .85;}
+.footer-nav a:hover{ opacity: .85; }
 
-    .site-footer a{
+.site-footer a{
     color: #fff;
-    font-size: 18px;
+    font-size: 17px;
     line-height: 1.2;
-    }
-    .footer-legal a{ text-decoration: underline; font-size: 16px;}
+    font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
 
-    .footer-copy{
+.footer-legal a{
+    text-decoration: underline;
+    font-size: 16px;
+}
+
+.footer-copy{
     grid-area: copy;
     font-size: 16px;
     opacity: .95;
     margin-top: 10px;
     color: white;
-    }
+}
 
 /* =========================
 COOKIE BANNER
@@ -1005,86 +999,72 @@ COOKIE BANNER
     opacity: .85;
     }
 
-    /* =========================
-    RESPONSIVE
-    ========================= */
-    @media (max-width: 980px){
+/* =========================
+RESPONSIVE
+========================= */
+@media (max-width: 980px){
 
-    h1{
-        font-size: 44px;
-    }
-    
-    h2{
-        font-size: 36px;
+    body{
+        padding-top: 90px;
     }
 
-    h3{
-        font-size: 26px;
-    }
+    h1{ font-size: 44px; }
+    h2{ font-size: 36px; }
+    h3{ font-size: 26px; }
+    p, li{ font-size: 18px; }
 
-    p, li{
-    font-size: 18px;
-    }
-
-    /* nav */
     header{
-        padding: 18px 18px 0;
+        padding: 12px 0 0;
     }
 
     .navbar{
-    display:grid;
-    grid-template-columns: auto 1fr auto;
-    align-items:center;
-    gap: 14px;
+        grid-template-columns: auto 1fr auto;
+        padding: 0 18px 12px;
+        gap: 14px;
     }
 
-    .navbar .social-links{ display:none; }
+    .navbar .social-links{ display: none; }
 
-    /* Order elements explicitly */
-    .logo{ grid-column:1; }
+    .logo{ grid-column: 1; }
 
     .logo img{
-    width: 200px;
-    height: auto;
+        width: 200px;
+        height: auto;
     }
 
     .burger-menu{
-    grid-column:3;
-    display:flex;            
-    width:44px;
-    height:44px;
-    margin:0;
+        grid-column: 3;
+        display: flex;
+        width: 44px;
+        height: 44px;
+        margin: 0;
     }
 
-    .social-links img{ width:16px; height:auto; display:block; }
-
     .nav-cta{
-        display: none; /* hide desktop CTA */
+        display: none;
     }
 
     .menu{
         display: none;
     }
 
-    /* dropdown menu */
     #mobile-menu{
-    width: calc(100% - 56px); /* matches your header padding (28px + 28px) */
-    margin: 12px auto 0;
+        width: calc(100% - 36px);
+        margin: 0 auto;
     }
 
-    /* CTA inside dropdown */
     .mobile-cta{
-    margin: 14px 6px 14px;
-    width: calc(100% - 12px);
-    max-width: 360px;
-    padding: 14px 18px;
-    font-size: 12px;
-    letter-spacing: .3px;
+        margin: 14px 6px 14px;
+        width: calc(100% - 12px);
+        max-width: 360px;
+        padding: 14px 18px;
+        font-size: 12px;
+        letter-spacing: .3px;
     }
 
     #mobile-menu .language{
-    padding: 10px 6px;
-    width: fit-content;
+        padding: 10px 6px;
+        width: fit-content;
     }
 
     #mobile-menu a.language img{
@@ -1092,23 +1072,24 @@ COOKIE BANNER
         height: 22px;
     }
 
-    /* hero */
     #hero{
         grid-template-columns: 1fr;
         gap: 28px;
         padding: 20px 28px 54px;
         text-align: left;
     }
+
     .hero-text h1{ font-size: 35px; }
 
-    /* about */
     .about-highlight{
-    padding: 44px 0 52px;
-    margin-bottom: 0px;
+        width: 100%;
+        margin-left: 0;
+        padding: 44px 0 52px;
+        margin-bottom: 0;
     }
 
     .about-highlight .phrase{
-        font-size: 25px; /* big like your mobile mockup */
+        font-size: 25px;
         line-height: 1.05;
         padding: 0 28px;
     }
@@ -1123,36 +1104,28 @@ COOKIE BANNER
         font-size: 30px;
     }
 
-    /* services */
     #services{
-    grid-template-columns: 1fr;
-    grid-template-areas:
-        "title"
-        "left"
-        "right";
-    row-gap: 22px;
-    padding: 56px 18px;
+        padding: 56px 18px;
     }
 
-    /* On mobile: make the highlight band full-width, like About */
-    #services::before{
-        width: 100%;
+    .services-inner{
+        display: block;
     }
 
     #services .service-box{
-        grid-column: 1 / -1;
-        padding: 0px 18px 20px;
+        padding: 0 18px 20px;
     }
 
-    #services .service-box h3{ font-size: 22px; text-align: center;}
+    #services .service-box h3{
+        font-size: 22px;
+        text-align: center;
+    }
 
     #services .transformation{
-        grid-column: 1 / -1;
         margin-top: 15px;
         text-align: center;
     }
 
-    /* Mobile phrase rules */
     #services .transformation .phrase{
         font-size: 30px;
         text-align: center;
@@ -1162,47 +1135,46 @@ COOKIE BANNER
         margin: 10px auto 50px;
     }
 
-    .services-inner{
-        display: block;
-    }
-
     #services .approach{
-        grid-column: 1 / -1;
         padding-top: 10px;
     }
 
-    #services .approach h3{ font-size: 24px; text-align: center; }
-
-    /* library */
-    #library h2{
-    font-size: 36px;
-    margin-bottom: 18px;
+    #services .approach h3{
+        font-size: 24px;
+        text-align: center;
     }
 
-    #library .carousel-container{
+    #testimonials h2{
+        font-size: 36px;
+        margin-bottom: 18px;
+    }
+
+    #testimonials .carousel-container{
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
         padding: 34px 18px 22px;
     }
 
-    #library .carousel-slide{
+    #testimonials .carousel-slide{
         grid-template-columns: 1fr;
         grid-template-rows: none;
         row-gap: 16px;
         justify-items: center;
     }
 
-    #library .carousel-slide img{
+    #testimonials .carousel-slide img{
         width: 260px;
         height: 360px;
     }
 
-    #library .carousel-slide a.carousel-button{
+    #testimonials .carousel-slide a.carousel-button{
         width: 150px;
         font-size: 14px;
         font-weight: 600;
     }
 
-    /* Arrows below on mobile */
-    #library .carousel-navigation{
+    #testimonials .carousel-navigation{
         position: static;
         transform: none;
         justify-content: center;
@@ -1212,13 +1184,12 @@ COOKIE BANNER
         pointer-events: auto;
     }
 
-    /* contact */
     #contact{
-    padding: 80px 0;
+        padding: 80px 0;
     }
 
     #contact h2{
-    font-size: 36px;
+        font-size: 36px;
     }
 
     #contact .contact-inner{
@@ -1244,29 +1215,33 @@ COOKIE BANNER
     .footer-inner{
         grid-template-columns: 1fr;
         grid-template-areas:
-        "social"
-        "right"
-        "copy";
+            "social"
+            "right"
+            "copy";
     }
-    .footer-right{align-items: center; }
-    .footer-nav, .footer-legal{justify-content:center; gap: 10px;}
 
-    .footer-nav a{font-size: 15px;}
+    .footer-right{
+        align-items: center;
+    }
 
-    .footer-legal a{font-size: 13px;}
+    .footer-nav, .footer-legal{
+        justify-content: center;
+        gap: 10px;
+    }
 
-    .footer-copy {font-size: 14px; text-align: center;}
+    .footer-nav a{ font-size: 15px; }
+    .footer-legal a{ font-size: 13px; }
+    .footer-copy{ font-size: 14px; text-align: center; }
+    .social-links{ justify-content: center; margin: 5px; }
 
-    .social-links{justify-content: center; margin: 5px}
-    
-    h4{font-size: 20px;}
+    h4{ font-size: 20px; }
 
     #preference-modal{
-    left: 5%;
-    width: 90%;
+        left: 5%;
+        width: 90%;
     }
 
-    .buttons {
-    flex-wrap: wrap;
-    } 
+    .buttons{
+        flex-wrap: wrap;
+    }
 }
