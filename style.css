@@ -901,11 +901,11 @@ COOKIE BANNER
     font-size: 14px;
     border-radius: 5px;
     background-color: var(--accent);
-    color: black;
+    color: white;
 }
 
 #preference-accept-all:hover {
-    color: white;
+    text-decoration: underline;
 }
 
 /* =========================
