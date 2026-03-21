@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicole Badotti | Respect de Soi et Bien-Être</title>
+    
+    <!-- SEO Meta tags -->
+    <meta name="description" content="Stratégiste Internationale en Respect de Soi et Bien-Être, proposant un accompagnement structuré pour sortir de la passivité, gagner en clarté et créer des changements durables." />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Nicole Badotti" />
+
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="Nicole Badotti | Respect de Soi et Bien-Être"/>
+    <meta property="og:description" content="Passer de la passivité et de l’autocritique à des décisions conscientes, à la clarté et à un équilibre durable." />
+    <meta property="og:image" content="http://127.0.0.1:3000/Images/nicolebadotti.webp" />
+    <meta property="og:url" content="https://nicolebadotti.com" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/Images/favicon.ico" type="image/x-icon">
+
+    <!-- Playfair Display Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <!-- Inter Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Questrial&display=swap" rel="stylesheet">
+
+    <!-- Outfit Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- CSS external file -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9GS43Z8V3T"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-9GS43Z8V3T');
+</script>
+
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="./index.html"><img src="/Images/logo.svg" alt="logo du site" title="Nicole Badotti | Respect de Soi et Bien-Être"></a>
+            </div>
+
+            <div class="menu">
+                <a href="./index.html">Accueil</a>
+                <a href="#about">À propos</a>
+                <a href="#services">Services</a>
+                <a href="#testimonials">Témoignages</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <div class="social-links">
+                <a href="https://www.instagram.com/nicolebadotti" target="_blank">
+                    <img src="/Images/instagram-icon.svg" alt="Instagram" title="@nicolebadotti"></a>
+                <a href="https://www.linkedin.com/in/nicolebadotti/" target="_blank">
+                    <img src="/Images/linkedin-icon.svg" alt="LinkedIn" title="/nicolebadotti"></a>
+                <a href="/index.html" class="language">
+                    <img src="/Images/uk-flag.svg" alt="english UK" title="English (UK)"></a>
+                <a href="/index-br.html" class="language">
+                    <img src="/Images/br-flag.svg" alt="portugais BR" title="Portugais (BR)"></a>
+            </div>
+
+            <div class="nav-cta">
+                <a href="https://calendly.com/nicolebadotti/initial-consultation" class="cta-button" target="_blank" rel="noopener noreferrer">PRENDRE RENDEZ-VOUS</a>
+            </div>
+
+            <div class="burger-menu" onclick="toggleMenu()" aria-label="Ouvrir le menu" role="button">&#9776;</div>
+        </nav>
+
+        <div id="mobile-menu" class="mobile-menu">
+            <a href="./index.html" onclick="closeMenu()">Accueil</a>
+            <a href="#about" onclick="closeMenu()">À propos</a>
+            <a href="#services" onclick="closeMenu()">Services</a>
+            <a href="#testimonials" onclick="closeMenu()">Témoignages</a>
+            <a href="#contact" onclick="closeMenu()">Contact</a>
+
+            <a href="https://calendly.com/nicolebadotti/initial-consultation"
+                class="cta-button mobile-cta"
+                target="_blank" rel="noopener noreferrer"
+                onclick="closeMenu()">
+                PRENDRE RENDEZ-VOUS
+            </a>
+
+            <div class="mobile-social">
+                <a href="https://www.instagram.com/nicolebadotti" target="_blank" rel="noopener">
+                    <img src="/Images/instagram-icon.svg" alt="Instagram">
+                </a>
+
+                <a href="https://www.linkedin.com/in/nicolebadotti/" target="_blank" rel="noopener">
+                    <img src="/Images/linkedin-icon.svg" alt="LinkedIn">
+                </a>
+
+                <a href="/index.html" class="language" onclick="closeMenu()">
+                    <img src="/Images/uk-flag.svg" alt="English UK">
+                </a>
+
+                <a href="/index-br.html" class="language" onclick="closeMenu()">
+                    <img src="/Images/br-flag.svg" alt="Portugais BR">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div>
+            <img src="/Images/nicolebadotti.webp" alt="Photo de profil" class="hero-image">
+        </div>
+
+        <div class="hero-text">
+            <h1>Stratégiste en Respect de Soi et Bien-Être</h1>
+            <p>J’accompagne les individus au-delà de la passivité et de l’autocritique vers davantage de clarté, de confiance et de respect de soi, afin qu’ils puissent reprendre la maîtrise de leur vie et construire un équilibre durable.</p>
+            <p>En tant que professionnelle certifiée par l’UKIHCA (UK International Health Coaching Association), j’adopte une approche intégrative, en accompagnant chacun dans l’évolution stratégique de ses habitudes et de son mode de vie.</p>
+            <p>Mon approche se concentre sur les dynamiques sous-jacentes qui façonnent la santé et l’équilibre global, afin d’aider mes clients à sortir des automatismes et à instaurer des changements durables grâce à des décisions délibérées, guidées par le respect de soi.</p>
+            <a href="#services" class="cta-button">TRAVAILLER AVEC MOI</a>
+            <img src="Images/bee-icon.svg" alt="Icône abeille" class="bee-icon">
+        </div>
+    </section>
+
+    <!-- Sections with Anchor links -->
+    <section id="about">
+        <div class="about-highlight">
+            <p class="phrase">La prise de conscience est la première étape,<br> mais c’est le <b>respect de soi</b> qui <i>transforme</i>.</p>
+            <img src="Images/bee-icon.svg" alt="Icône abeille" class="bee-icon">
+        </div>
+        <div class="about-inner">
+            <div class="about-content">
+                <h2>À propos</h2>
+                <p>Je suis polyglotte et j’ai vécu au Brésil, en Australie, en Angleterre, aux États-Unis, en Suisse et en France. J’ai également passé du temps au Canada et en Corée du Sud, et voyagé dans près de 50 pays. Ce parcours a façonné une perspective multiculturelle sur la manière dont identité, environnement et comportements s’influencent mutuellement.</p> 
+                <p>À travers l’expérience et un travail d’étude continu, j’ai compris que les changements durables naissent rarement de solutions rapides ou de validation externe. Ils émergent de décisions délibérées et cohérentes, alignées sur les valeurs et le contexte réel de chacun.</p>
+            </div>
+
+        <aside class="about-box">
+            <h3>Objectif</h3>
+            <p>Aider chacun à reprendre la direction de sa vie grâce au respect de soi.</p>
+            <h3>Vision</h3>
+            <p>Favoriser une évolution culturelle, de la passivité et de l’autocritique vers le respect de soi comme fondement d’un équilibre durable.</p>
+            <h3>Valeurs</h3>
+                <ul class="values">
+                    <li><b>Cohérence</b></li>
+                    <li><b>Conscience</b></li>
+                    <li><b>Intégrité</b></li>
+                    <li><b>Longévité</b></li>
+                </ul>
+        </aside>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="services-inner">
+            <div class="services-left">
+                <h2 class="services-title">Services</h2>
+                <div class="service-box">
+                    <h3>Accompagnement individuel</h3>
+                    <p>Des séances personnalisées, adaptées à vos enjeux, votre contexte et vos objectifs spécifiques.</p>
+
+                    <h3>Accompagnement en groupe</h3>
+                    <p>Des sessions conçues pour encourager l’apprentissage partagé, la réflexion et la progression collective.</p>
+
+                    <h3>Ateliers & Événements</h3>
+                    <p>Des expériences immersives qui explorent la santé globale à travers la réflexion et la mise en pratique.</p>
+
+                    <h3>Ressources numériques</h3>
+                    <p>Des outils concrets pour soutenir un progrès continu et renforcer l’autonomie au quotidien.</p>
+                </div>
+            </div>
+
+        <div class="approach">
+            <h2 class="approach-title">Mon approche</h2>
+            <p>J’adopte une approche systémique et intégrative, en tenant compte des dimensions physique, mentale, émotionnelle, sociale, environnementale et spirituelle, plutôt que de me concentrer uniquement sur des symptômes isolés. Le changement devient réaliste et durable lorsque les habitudes et les décisions s’alignent à ces multiples niveaux. Le respect de soi constitue le principe central de ce processus.</p>
+            <h3>Perspective globale</h3>
+            <p class="text-approach">Une lecture multiculturelle appliquée à la stratégie personnelle, ancrée dans le contexte, la culture et l’individualité.</p>
+
+            <h3>Le respect de soi en pratique</h3>
+            <p class="text-approach">Le respect de soi traduit en décisions délibérées, en limites claires et en habitudes cohérentes, alignées sur le contexte et les valeurs personnelles.</p>
+
+            <h3>Réduction des toxines</h3>
+            <p class="text-approach">Une réduction stratégique des toxines physiques, relationnelles et comportementales pour soutenir une vie plus saine et plus durable.</p>
+        </div>
+    </div>
+
+    <div class="transformation">
+        <p class="phrase">Je vous accompagne de la <i>passivité</i>
+        <br>vers des <b>décisions délibérées</b>.
+        </p>
+        <img src="Images/bee-icon.svg" alt="Icône abeille" class="bee-icon">
+    </div>
+    </section>
+
+    <section id="testimonials">
+    <h2>Témoignages</h2>
+
+    <div class="testimonial-carousel">
+        <button class="testimonial-arrow testimonial-arrow-prev" aria-label="Témoignage précédent">
+            &#8592;
+        </button>
+
+        <div class="testimonial-viewport">
+            <div class="testimonial-track">
+                <article class="testimonial-slide">
+                    <p class="testimonial-text">
+                    "Travailler avec Nicole a profondément transformé ma façon de penser l’exercice, l’alimentation et l’image corporelle. Elle m’a aidée à questionner mon approche, en me faisant passer d’une logique de punition et de restriction à davantage de douceur et d’optimisme. Je recommanderais Nicole à toute personne enfermée dans un cycle d’image corporelle négative et de frustration."
+                    </p>
+                    <p class="testimonial-author">
+                    H.T.M., Directrice et Coach, Royaume-Uni
+                    </p>
+                </article>
+
+                <article class="testimonial-slide">
+                    <p class="testimonial-text">
+                    "Ce fut une très belle expérience de travailler avec Nicole. Dès l’appel de démarrage, tout était clair : comment cet accompagnement pouvait aider, quelles en étaient les limites, et en quoi il ne s’agissait pas d’une solution miracle, mais d’un soutien dans un cheminement plus large. Et cela a tenu ses promesses [...] L’accompagnement était très professionnel, tout en restant empreint d’intégrité, de chaleur humaine et d’une vraie qualité de présence. Je n’avais jamais vécu une approche aussi globale du coaching, et le style de Nicole m’a réellement aidée sur les plans physique, mental et émotionnel."
+                    </p>
+                    <p class="testimonial-author">
+                    M.S., Directrice Marketing, France
+                    </p>
+                </article>
+
+                <article class="testimonial-slide">
+                    <p class="testimonial-text">
+                    "Mes séances de coaching avec Nicole ont été remarquables. Elles m’ont permis de débloquer les outils dont j’avais besoin pour redéfinir mon chemin d’action vers mes objectifs. Elles m’ont également apporté des méthodes que j’utilise encore naturellement aujourd’hui [...] Il était aussi très rassurant de pouvoir parler librement de mes difficultés, déconstruire mes pensées et interroger les racines de mes blocages mentaux. Une fois identifiés, ces blocages sont devenus beaucoup plus faciles à dépasser."
+                    </p>
+                    <p class="testimonial-author">
+                    O.N.L., Entrepreneure, France
+                    </p>
+                </article>
+
+                <article class="testimonial-slide">
+                    <p class="testimonial-text">
+                    "Nicole est une coach exceptionnelle en santé et bien-être. Au départ, j’avais cherché un accompagnement pour perdre du poids. Au fil des séances, le travail a pris une toute autre direction et m’a amenée à prendre soin de mon bien-être physique, émotionnel et mental. Nicole a su travailler avec finesse sur mes croyances profondes tout en offrant un soutien constant et des points de suivi très justes. Je la recommande vivement pour son approche à la fois chaleureuse, positive, inspirante et profondément humaine."
+                    </p>
+                    <p class="testimonial-author">
+                    S.I., Responsable de showroom et étudiante, Australie
+                    </p>
+                </article>
+
+                <article class="testimonial-slide">
+                    <p class="testimonial-text">
+                    "Je pense que l’un des bénéfices les plus importants que j’ai retirés de ce programme en matière de santé et de bien-être est le développement de la conscience et du sens des responsabilités [...] L’accompagnement de Nicole a véritablement changé ma vie. Le soutien et les outils qu’elle propose sont extrêmement utiles et puissants [...] Merci infiniment pour toute votre aide et pour la passion que vous mettez au service des autres. Cela a été une expérience très positive dans ma vie, et je suis confiant que les changements que je mets en place aujourd’hui seront durables."
+                    </p>
+                    <p class="testimonial-author">
+                    J.A.L.R., Consultant financier, France
+                    </p>
+                </article>
+
+                <article class="testimonial-slide">
+                    <p class="testimonial-text">
+                    "Nicole, en tant que professionnelle engagée et compétente, a remarqué que j’avais besoin d’améliorer [ma santé] et m’a proposé d’être ma mentore et coach, ce que je n’avais jamais eu auparavant, et j’ai accepté immédiatement. Au fil des semaines, son accompagnement n’a cessé de gagner en profondeur, avec davantage de confiance et d’ouverture pour parler de mon monde intérieur. Grâce à son aide, j’ai pu développer certaines prises de conscience sur moi-même et parvenir à des conclusions qui ne m’étaient pas claires auparavant."
+                    </p>
+                    <p class="testimonial-author">
+                    N.A., Entrepreneur, Brésil
+                    </p>
+                </article>
+
+                <article class="testimonial-slide">
+                    <p class="testimonial-text">
+                    "Nicole est une coach formidable et profondément empathique. Sa capacité à écouter véritablement et à comprendre d’où je venais a fait une énorme différence. Elle m’a aidé à dépasser plusieurs freins importants, notamment pour retrouver un meilleur équilibre entre vie professionnelle et vie personnelle, ainsi que pour clarifier mon projet entrepreneurial. Je suis ressorti de nos séances avec davantage de confiance, de clarté et de concentration. Je la recommande vivement."
+                    </p>
+                    <p class="testimonial-author">
+                    N.D.C., Responsable des opérations, Royaume-Uni
+                    </p>
+                </article>
+
+                <article class="testimonial-slide">
+                    <p class="testimonial-text">
+                    "Nicole est une personne très professionnelle, compétente, accessible et chaleureuse. Dès le premier instant, j’ai senti qu’elle était pleinement engagée et investie dans ce qu’elle fait, et je suis convaincu que ses connaissances, alliées à sa nature profondément bienveillante, aideront un grand nombre de personnes."
+                    </p>
+                    <p class="testimonial-author">
+                    A.R., Responsable Client Services, Royaume-Uni
+                    </p>
+                </article>
+            </div>
+        </div>
+
+        <button class="testimonial-arrow testimonial-arrow-next" aria-label="Témoignage suivant">
+            &#8594;
+        </button>
+    </div>
+
+    <img src="Images/bee-icon.svg" alt="Icône abeille" class="bee-icon">
+    </section>
+
+    <!-- option + Shift + down arrow to copy selection -->
+
+    <section id="contact">
+        <div class="contact-inner">
+            <div class="contact-left">
+            <h2>Entrons en contact</h2>
+
+            <div class="contact-info">
+                <p><a href="https://wa.me/+4407494480448" target="_blank"><b>+44 (0) 7494 480 448</b></a></p>
+                <p><a href="mailto:info@nicolebadotti.com" target="_blank"><b>info@nicolebadotti.com</b></a></p>
+                <p><a href="https://www.instagram.com/nicolebadotti/" target="_blank"><b>@nicolebadotti</b></a></p>
+            </div>
+
+            <a href="https://calendly.com/nicolebadotti/free-consultation"
+                class="cta-button"
+                target="_blank" rel="noopener noreferrer">
+                PRENDRE RENDEZ-VOUS
+            </a>
+
+            <img src="Images/bee-icon.svg" alt="Icône abeille" class="bee-icon">
+            </div>
+
+            <div class="contact-right">
+            <img src="/Images/nicolebadotti-portrait.webp" alt="Portrait" class="contact-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+<footer class="site-footer">
+        <div class="footer-inner">
+            <div class="social-links">
+                <a href="https://www.instagram.com/nicolebadotti" target="_blank" rel="noopener">
+                    <img src="/Images/instagram-icon-white.svg" alt="Instagram" title="@nicolebadotti">
+                </a>
+                <a href="https://www.linkedin.com/in/nicolebadotti/" target="_blank" rel="noopener">
+                    <img src="/Images/linkedin-icon-white.svg" alt="LinkedIn" title="/nicolebadotti">
+                </a>
+                <a href="/index.html" class="language">
+                    <img src="/Images/uk-flag.svg" alt="English UK" title="English (UK)">
+                </a>
+                <a href="/index-br.html" class="language">
+                    <img src="/Images/br-flag.svg" alt="Portugais BR" title="Portugais (BR)">
+                </a>
+            </div>
+                <nav class="footer-right">
+                    <ul class="footer-nav">
+                        <li><a href="./index.html">Accueil</a></li>
+                        <li><a href="/#about">À propos</a></li>
+                        <li><a href="/#services">Services</a></li>
+                        <li><a href="/#contact">Contact</a></li>
+                    </ul>
+                    <ul class="footer-legal">
+                        <li><a href="./conditions.html#terms-of-use" target="_blank">Conditions d’utilisation</a></li>
+                        <li><a href="./conditions.html#disclaimer" target="_blank">Avertissement</a></li>
+                        <li><a href="./conditions.html#cookie-policy" target="_blank">Politique de cookies</a></li>
+                        <li><a href="./conditions.html#privacy" target="_blank">Politique de confidentialité</a></li>
+                    </ul>
+                </nav>
+                <p class="footer-copy">© 2026 Nicole Badotti. Tous droits réservés.</p>
+                <div class="footer-spacer"></div>
+        </div>
+</footer>
+
+<!-- Cookie Popup -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+
+        const savedConsent = localStorage.getItem("consentMode");
+
+        if (savedConsent) {
+            gtag("consent", "default", JSON.parse(savedConsent));
+        } else {
+            gtag("consent", "default", {
+                ad_storage: "denied",
+                analytics_storage: "denied",
+                personalization_storage: "denied",
+                functionality_storage: "denied",
+                security_storage: "granted"
+            });
+        }
+    </script>
+
+    <div id="cookie-banner" class="cookie-banner">
+        <p>Afin de vous offrir la meilleure expérience, ce site utilise des cookies essentiels et, avec votre accord, des cookies analytiques et autres cookies non essentiels. Vous pouvez accepter, refuser ou personnaliser vos préférences à tout moment.
+            <a id="learn-more" href="./cookies.html" target="_blank">En savoir plus</a>
+        </p>
+        <div class="buttons">
+            <button id="accept-all">Accepter</button>
+            <button id="decline-all">Refuser</button>
+            <button id="customise">Personnaliser</button>
+        </div>
+    </div>
+
+    <div id="preference-modal" style="display: none;">
+        <h2>Préférences de confidentialité</h2>
+        <ul>
+            <li>
+                <label for="required">Cookies essentiels</label>
+                <input type="checkbox" checked disabled id="stricly-necessary">
+            </li>
+            <li>
+                <label for="performance">Cookies de performance</label>
+                <input type="checkbox" id="performance">
+            </li>
+            <li>
+                <label for="functional">Cookies fonctionnels</label>
+                <input type="checkbox" id="functional">
+            </li>
+            <li>
+                <label for="targeting">Cookies publicitaires</label>
+                <input type="checkbox" id="targeting">
+            </li>
+        </ul>
+        <a href="./conditions.html#cookie-policy" target="_blank">En savoir plus</a>
+        <div class="buttons-modal">
+            <button id="save-preferences">Enregistrer les préférences</button>
+            <button id="preference-accept-all">Tout accepter</button>
+        </div>
+    </div>
+
+    <!-- JavaScript external file -->
+    <script src="./script.js"></script>
+</body>
+
+</html>

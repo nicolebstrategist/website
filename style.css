@@ -388,7 +388,7 @@ ABOUT
 
 .values b {
     color: var(--ink);
-    font-weight: 800;
+    font-weight: 600;
 }
 
 /* =========================
@@ -409,7 +409,7 @@ SERVICES
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 70px;
+    gap: 40px;
 }
 
 #services .service-box {
