@@ -225,4 +225,29 @@ document.addEventListener("DOMContentLoaded", () => {
         start();
     }
 
+    const carousel = document.querySelector(".testimonial-carousel");
+
+    function pauseAutoplay() {
+        clearInterval(testimonialInterval);
+    }
+
+    function resumeAutoplay() {
+        startTestimonialAutoplay();
+    }
+
+    // Touch (mobile)
+    carousel.addEventListener("touchstart", pauseAutoplay);
+    carousel.addEventListener("touchend", resumeAutoplay);
+
+    // Mouse (desktop)
+    carousel.addEventListener("mousedown", pauseAutoplay);
+    carousel.addEventListener("mouseup", resumeAutoplay);
+
+    // Optional: also resume if mouse leaves
+    carousel.addEventListener("mouseleave", resumeAutoplay);
+
+    function resumeAutoplay() {
+    setTimeout(startTestimonialAutoplay, 2000);
+    }
+
 });
