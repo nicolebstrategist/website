@@ -208,7 +208,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         function start() {
             clearInterval(interval);
-            interval = setInterval(nextSlide, 4000);
+            interval = setInterval(nextSlide, 6000);
         }
 
         next.addEventListener("click", () => {
