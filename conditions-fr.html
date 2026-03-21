@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicole Badotti | Respect de Soi et Bien-Être</title>
+    
+    <!-- SEO Meta tags -->
+    <meta name="description" content="Stratégiste Internationale en Respect de Soi et Bien-Être, proposant un accompagnement structuré pour sortir de la passivité, gagner en clarté et créer des changements durables." />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Nicole Badotti" />
+
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="Nicole Badotti | Respect de Soi et Bien-Être"/>
+    <meta property="og:description" content="Passer de la passivité et de l’autocritique à des décisions conscientes, à la clarté et à un équilibre durable." />
+    <meta property="og:image" content="http://127.0.0.1:3000/Images/nicolebadotti.webp" />
+    <meta property="og:url" content="https://nicolebadotti.com" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/Images/favicon.ico" type="image/x-icon">
+
+    <!-- Playfair Display Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <!-- Inter Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Questrial&display=swap" rel="stylesheet">
+
+    <!-- Outfit Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- CSS external file -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9GS43Z8V3T"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-9GS43Z8V3T');
+</script>
+
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="./index.html"><img src="/Images/logo.svg" alt="logo du site" title="Nicole Badotti | Respect de Soi et Bien-Être"></a>
+            </div>
+
+            <div class="menu">
+                <a href="./index.html">Accueil</a>
+                <a href="#about">À propos</a>
+                <a href="#services">Services</a>
+                <a href="#testimonials">Témoignages</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <div class="social-links">
+                <a href="https://www.instagram.com/nicolebadotti" target="_blank">
+                    <img src="/Images/instagram-icon.svg" alt="Instagram" title="@nicolebadotti"></a>
+                <a href="https://www.linkedin.com/in/nicolebadotti/" target="_blank">
+                    <img src="/Images/linkedin-icon.svg" alt="LinkedIn" title="/nicolebadotti"></a>
+                <a href="/index.html" class="language">
+                    <img src="/Images/uk-flag.svg" alt="english UK" title="English (UK)"></a>
+                <a href="/index-br.html" class="language">
+                    <img src="/Images/br-flag.svg" alt="portugais BR" title="Portugais (BR)"></a>
+            </div>
+
+            <div class="nav-cta">
+                <a href="https://calendly.com/nicolebadotti/initial-consultation" class="cta-button" target="_blank" rel="noopener noreferrer">PRENDRE RENDEZ-VOUS</a>
+            </div>
+
+            <div class="burger-menu" onclick="toggleMenu()" aria-label="Ouvrir le menu" role="button">&#9776;</div>
+        </nav>
+
+        <div id="mobile-menu" class="mobile-menu">
+            <a href="./index.html" onclick="closeMenu()">Accueil</a>
+            <a href="#about" onclick="closeMenu()">À propos</a>
+            <a href="#services" onclick="closeMenu()">Services</a>
+            <a href="#testimonials" onclick="closeMenu()">Témoignages</a>
+            <a href="#contact" onclick="closeMenu()">Contact</a>
+
+            <a href="https://calendly.com/nicolebadotti/initial-consultation"
+                class="cta-button mobile-cta"
+                target="_blank" rel="noopener noreferrer"
+                onclick="closeMenu()">
+                PRENDRE RENDEZ-VOUS
+            </a>
+
+            <div class="mobile-social">
+                <a href="https://www.instagram.com/nicolebadotti" target="_blank" rel="noopener">
+                    <img src="/Images/instagram-icon.svg" alt="Instagram">
+                </a>
+
+                <a href="https://www.linkedin.com/in/nicolebadotti/" target="_blank" rel="noopener">
+                    <img src="/Images/linkedin-icon.svg" alt="LinkedIn">
+                </a>
+
+                <a href="/conditions.html" class="language" onclick="closeMenu()">
+                    <img src="/Images/uk-flag.svg" alt="English UK">
+                </a>
+
+                <a href="/conditions-br.html" class="language" onclick="closeMenu()">
+                    <img src="/Images/br-flag.svg" alt="Portugais BR">
+                </a>
+            </div>
+        </div>
+    </header>
+
+<main class="legal-page">
+        <!-- Optional: page intro + quick links -->
+        <section class="legal-hero" id="terms">
+            <h1>Conditions générales</h1>
+            <p class="legal-intro">Respect de soi et bien-être</p>
+        </section>
+
+        <!-- TERMS OF USE -->
+        <section class="legal-section" id="terms-of-use">
+            <h2>Conditions d’utilisation</h2>
+
+            <h3 class="h3-terms">1. Introduction</h3>
+            <p>Les présentes Conditions d’utilisation régissent votre accès et votre utilisation de www.nicolebadotti.com ainsi que de tout contenu, service, produit digital ou programme associé (le « Site »).</p>
+            <p>En accédant à ce Site ou en l’utilisant, vous acceptez d’être juridiquement lié par les présentes Conditions. Si vous n’êtes pas d’accord, vous ne devez pas utiliser ce Site.</p>
+            <p>Ce Site est exploité par Nicole Badotti (« nous », « notre », « nos »).</p>
+            <p>Vous devez avoir au moins 18 ans pour utiliser ce Site ou acheter l’un de nos services.</p>
+
+            <h3 class="h3-terms">2. Modifications des présentes Conditions</h3>
+            <p>Nous pouvons modifier les présentes Conditions à tout moment. La version mise à jour prendra effet dès sa publication sur ce Site. La poursuite de l’utilisation du Site vaut acceptation des Conditions révisées.</p>
+
+            <h3 class="h3-terms">3. Accès au Site</h3>
+            <p>Nous nous réservons le droit de modifier, suspendre ou retirer tout ou partie du Site sans préavis.</p>
+            <p>Nous ne garantissons pas que le Site, ou tout contenu qui y figure, sera toujours disponible ou ininterrompu.</p>
+            <p>Il vous appartient de veiller à ce que toute personne accédant au Site via votre connexion internet respecte les présentes Conditions.</p>
+
+            <h3 class="h3-terms">4. Propriété intellectuelle</h3>
+            <p>L’ensemble du contenu de ce Site, y compris les textes, graphismes, logos, images, vidéos, téléchargements et supports de programme, est la propriété de Nicole Badotti ou fait l’objet d’une licence à son bénéfice, et est protégé par les lois britanniques et internationales sur le droit d’auteur et la propriété intellectuelle.</p>
+            <p>Vous pouvez accéder au Site uniquement pour un usage personnel et non commercial.</p>
+            <p>Vous ne devez pas :</p>
+            <ul>
+                <li>Copier, reproduire, distribuer ou republier un contenu sans autorisation écrite</li>
+                <li>Modifier un contenu ni créer des œuvres dérivées</li>
+                <li>Utiliser un contenu à des fins commerciales</li>
+            </ul>
+            <p>Toute utilisation non autorisée peut donner lieu à des poursuites judiciaires.</p>
+
+            <h3 class="h3-terms">5. Clause de non-responsabilité relative au coaching et à l’éducation</h3>
+            <p>L’ensemble du contenu, des programmes et des services sont fournis uniquement à des fins éducatives et informatives.</p>
+            <p>Ils ne constituent pas :</p>
+            <ul>
+                <li>Un avis médical</li>
+                <li>Un traitement psychologique ou psychiatrique</li>
+                <li>Un conseil juridique ou financier</li>
+            </ul>
+            <p>Vous demeurez pleinement responsable de vos décisions, de vos actions et de vos résultats.</p>
+            <p>Si vous avez une préoccupation médicale ou liée à votre santé mentale, vous devez consulter un professionnel qualifié.</p>
+
+            <h3 class="h3-terms">6. Achats et paiements</h3>
+            <p>Si vous achetez un service, un produit digital ou un programme, vous acceptez que :</p>
+            <ul>
+                <li>Toutes les informations fournies soient exactes et complètes</li>
+                <li>Vous soyez autorisé à utiliser le moyen de paiement sélectionné</li>
+            </ul>
+            <p>Nous nous réservons le droit de refuser ou d’annuler toute commande en cas de fraude suspectée, d’erreur de prix ou d’usage abusif.</p>
+            <p>Les politiques de remboursement, lorsqu’elles s’appliquent, seront clairement indiquées sur la page de vente concernée.</p>
+
+            <h3 class="h3-terms">7. Comportement de l’utilisateur</h3>
+            <p>Vous acceptez de ne pas :</p>
+            <ul>
+                <li>Utiliser le Site de manière illégale</li>
+                <li>Téléverser du contenu nuisible ou malveillant</li>
+                <li>Porter atteinte aux droits de propriété intellectuelle</li>
+                <li>Tenter d’obtenir un accès non autorisé au Site</li>
+                <li>Perturber ou entraver le fonctionnement du Site</li>
+            </ul>
+            <p>Nous nous réservons le droit de restreindre ou de mettre fin à l’accès en cas de violation des présentes Conditions.</p>
+
+            <h3 class="h3-terms">8. Contributions des utilisateurs</h3>
+            <p>Si vous soumettez des commentaires, témoignages ou tout autre contenu :</p>
+            <ul>
+                <li>Vous confirmez détenir les droits sur ce contenu</li>
+                <li>Vous nous accordez l’autorisation de l’utiliser, de le reproduire et de l’afficher à des fins professionnelles légitimes</li>
+            </ul>
+            <p>Nous nous réservons le droit de retirer tout contenu à notre discrétion.</p>
+
+            <h3 class="h3-terms">9. Liens vers des sites tiers</h3>
+            <p>Ce Site peut contenir des liens vers des sites tiers. Nous ne sommes pas responsables de leur contenu, de leurs politiques ni de leurs pratiques. L’accès à ces sites se fait à vos propres risques.</p>
+
+            <h3 class="h3-terms">10. Limitation de responsabilité</h3>
+            <p>Dans toute la mesure permise par la loi, nous ne pourrons être tenus responsables de :</p>
+            <ul>
+                <li>Pertes indirectes ou consécutives</li>
+                <li>Perte de revenus, d’activité ou d’opportunité</li>
+                <li>Interruptions techniques ou indisponibilité du Site</li>
+            </ul>
+            <p>Rien dans les présentes Conditions n’exclut la responsabilité pour décès ou dommage corporel causé par négligence, fraude, ou toute responsabilité qui ne peut légalement être exclue en vertu du droit britannique.</p>
+
+            <h3 class="h3-terms">11. Protection des données</h3>
+            <p>Vos données personnelles sont traitées conformément à notre Politique de confidentialité et au droit britannique applicable en matière de protection des données, y compris le UK GDPR et le Data Protection Act 2018.</p>
+
+            <h3 class="h3-terms">12. Droit applicable</h3>
+            <p>Les présentes Conditions sont régies et interprétées conformément au droit de l’Angleterre et du Pays de Galles. Tout litige sera soumis à la compétence exclusive des tribunaux d’Angleterre et du Pays de Galles.</p>
+
+            <h3 class="h3-terms">13. Contact</h3>
+            <p>Pour toute question relative aux présentes Conditions, veuillez nous contacter à l’adresse suivante :</p>
+            <p><a href="mailto:info@nicolebadotti.com"><b>info@nicolebadotti.com</b></a></p>
+        </section>
+
+        <!-- DISCLAIMER -->
+        <section class="legal-section" id="disclaimer">
+            <h2>Avertissement</h2>
+            <p>Le contenu fourni sur www.nicolebadotti.com, y compris les articles, programmes, séances, ressources digitales, newsletters, contenus sur les réseaux sociaux et tout support associé, est mis à disposition uniquement à des fins d’information générale et d’éducation.</p>
+            <p>Rien sur ce Site ni dans tout contenu associé ne constitue un avis médical, psychologique, psychiatrique, juridique ou financier.</p>
+            <p>Mon travail se concentre sur le développement personnel, le respect de soi, l’alignement du mode de vie et la stratégie de bien-être. Il ne remplace ni un diagnostic, ni un traitement, ni des soins dispensés par un professionnel de santé.</p>
+            <p>Vous ne devez pas ignorer, retarder ou remplacer un avis médical professionnel sur la base d’informations obtenues via ce Site ou via un programme ou une séance. Si vous avez des préoccupations concernant votre santé physique ou mentale, vous devez consulter un professionnel de santé qualifié.</p>
+            <p>La participation aux services de coaching ou aux services éducatifs est volontaire. Vous demeurez pleinement responsable de vos décisions, de vos actions et de vos résultats.</p>
+            <p>Bien que je m’efforce de fournir des informations exactes et à jour, fondées sur un travail d’étude continu et sur des sources réputées, aucun résultat ne peut être garanti. Les résultats individuels varient et dépendent de multiples facteurs, notamment du contexte personnel, de l’engagement et des circonstances.</p>
+            <p>En utilisant ce Site et ses services, vous reconnaissez et acceptez que toute confiance accordée aux informations fournies relève de votre seule discrétion et de votre propre responsabilité.</p>
+        </section>
+
+        <!-- COOKIE POLICY -->
+        <section class="legal-section" id="cookie-policy">
+            <h2>Politique de cookies</h2>
+            <p>La présente Politique de cookies explique comment www.nicolebadotti.com (le « Site ») utilise des cookies et des technologies similaires.</p>
+            <p>Ce Site est exploité par Nicole Badotti (« nous », « notre », « nos »).</p>
+            <p>Nous utilisons des cookies conformément au UK General Data Protection Regulation (UK GDPR) et au Privacy and Electronic Communications Regulations (PECR).</p>
+
+            <h3 class="h3-terms">1. Que sont les cookies</h3>
+            <p>Les cookies sont de petits fichiers texte placés sur votre appareil lorsque vous visitez un site web. Ils permettent au site de fonctionner correctement, d’améliorer l’expérience utilisateur et de fournir des informations analytiques.</p>
+            <p>Les cookies ne peuvent pas accéder aux autres données de votre appareil ni exécuter des programmes.</p>
+
+            <h3 class="h3-terms">2. Types de cookies que nous utilisons</h3>
+            <p>Nous utilisons les catégories de cookies suivantes :</p>
+
+            <h4>Cookies strictement nécessaires</h4>
+            <p>Ces cookies sont essentiels au bon fonctionnement du Site et ne peuvent pas être désactivés dans nos systèmes. Ils permettent des fonctions essentielles telles que la sécurité, la navigation, la gestion de session et l’accès aux zones sécurisées.</p>
+
+            <h4>Cookies de performance</h4>
+            <p>Ces cookies nous aident à mesurer les performances du Site et à comprendre comment les visiteurs le parcourent, par exemple les pages les plus consultées, les temps de chargement et les éventuelles erreurs. Nous utilisons ces informations pour améliorer l’expérience utilisateur et les performances globales du site.</p>
+
+            <h4>Cookies fonctionnels</h4>
+            <p>Ces cookies permettent au Site de mémoriser les préférences et choix de l’utilisateur, par exemple les préférences en matière de cookies, les paramètres de langue ou d’autres configurations, afin d’offrir une expérience plus personnalisée et cohérente.</p>
+
+            <h4>Cookies publicitaires</h4>
+            <p>Ces cookies peuvent être utilisés pour proposer des communications plus pertinentes et mesurer l’efficacité des campagnes. Ils peuvent être déposés par nous-mêmes ou par des tiers, par exemple des plateformes publicitaires et des réseaux sociaux. Ils peuvent établir un profil de vos intérêts à partir de votre comportement de navigation.</p>
+
+            <p>Nous ne déposons des cookies non essentiels, tels que les cookies de performance, fonctionnels ou publicitaires, qu’après avoir obtenu votre consentement via notre bannière cookies.</p>
+
+            <h3 class="h3-terms">3. Cookies tiers</h3>
+            <p>Certains cookies peuvent être déposés par des services tiers de confiance, tels que :</p>
+            <ul>
+                <li>Des fournisseurs d’analyse web</li>
+                <li>Des plateformes d’email marketing</li>
+                <li>Des plateformes publicitaires</li>
+            </ul>
+            <p>Ces tiers traitent les données conformément à leurs propres politiques de confidentialité.</p>
+
+            <h3 class="h3-terms">4. Base légale</h3>
+            <p>En vertu du droit britannique sur la protection des données, la base légale de l’utilisation des cookies non essentiels est votre consentement.</p>
+            <p>Vous pouvez donner, refuser ou retirer votre consentement à tout moment via notre outil de gestion des préférences en matière de cookies.</p>
+
+            <h3 class="h3-terms">5. Gestion des cookies</h3>
+            <p>Vous pouvez gérer vos préférences en matière de cookies :</p>
+            <ul>
+                <li>Via les paramètres de notre bannière cookies</li>
+                <li>En ajustant les paramètres de votre navigateur pour bloquer ou supprimer les cookies</li>
+            </ul>
+            <p>Veuillez noter que la désactivation de certains cookies peut affecter le fonctionnement du Site.</p>
+
+            <h3 class="h3-terms">6. Durée de conservation des cookies</h3>
+            <p>Certains cookies sont liés à la session et expirent lorsque vous fermez votre navigateur. D’autres restent sur votre appareil pendant une durée déterminée, sauf suppression manuelle.</p>
+            <p>Les durées de conservation précises dépendent du type de cookie et du fournisseur tiers concerné.</p>
+
+            <h3 class="h3-terms">7. Modifications de la présente Politique</h3>
+            <p>Nous pouvons mettre à jour la présente Politique de cookies à tout moment. La version la plus récente sera toujours disponible sur cette page.</p>
+
+            <h3 class="h3-terms">8. Contact</h3>
+            <p>Pour toute question relative à la présente Politique de cookies, veuillez nous contacter à l’adresse suivante :</p>
+            <p><a href="mailto:info@nicolebadotti.com"><b>info@nicolebadotti.com</b></a></p>
+        </section>
+
+        <!-- PRIVACY -->
+        <section class="legal-section" id="privacy">
+            <h2>Confidentialité</h2>
+
+            <h3 class="h3-terms">Politique de confidentialité</h3>
+
+            <h3 class="h3-terms">1. Introduction</h3>
+            <p>Nicole Badotti (« nous », « notre », « nos ») respecte votre vie privée et s’engage à protéger vos données personnelles.</p>
+            <p>La présente Politique de confidentialité explique comment nous collectons, utilisons, stockons et protégeons vos informations personnelles lorsque vous visitez www.nicolebadotti.com (le « Site »), achetez des services, vous abonnez à nos communications ou interagissez d’une autre manière avec nous.</p>
+            <p>Nous traitons les données personnelles conformément au UK General Data Protection Regulation (UK GDPR) et au Data Protection Act 2018.</p>
+            <p>Nicole Badotti est le responsable du traitement au sens de la législation applicable en matière de protection des données.</p>
+            <p>Pour toute question, vous pouvez nous contacter à l’adresse suivante : <a href="mailto:info@nicolebadotti.com"><b>info@nicolebadotti.com</b></a>.</p>
+
+            <h3 class="h3-terms">2. Les données que nous collectons</h3>
+            <p>Nous pouvons collecter et traiter les catégories de données personnelles suivantes :</p>
+            <ul>
+                <li><b>Données d’identité :</b> nom, civilité</li>
+                <li><b>Données de contact :</b> adresse e-mail, numéro de téléphone, adresse de facturation</li>
+                <li><b>Données de transaction :</b> détails des paiements et des services achetés</li>
+                <li><b>Données techniques :</b> adresse IP, type de navigateur, informations sur l’appareil, données d’utilisation</li>
+                <li><b>Données marketing et communication :</b> vos préférences concernant la réception de communications marketing</li>
+            </ul>
+            <p>Nous ne collectons pas intentionnellement de données sensibles, telles que les données de santé, les opinions politiques, les croyances religieuses ou les données biométriques.</p>
+
+            <h3 class="h3-terms">3. Comment nous collectons vos données</h3>
+            <p>Nous collectons des données personnelles par le biais de :</p>
+            <ul>
+                <li>Vos interactions directes, par exemple lorsque vous remplissez des formulaires, réservez des séances, vous abonnez à une newsletter ou nous contactez</li>
+                <li>Technologies automatisées, y compris les cookies et les outils analytiques lorsque vous utilisez le Site</li>
+                <li>Prestataires tiers, tels que les processeurs de paiement et les plateformes d’email marketing</li>
+            </ul>
+
+            <h3 class="h3-terms">4. Comment nous utilisons vos données</h3>
+            <p>Nous utilisons vos données personnelles uniquement lorsqu’une base légale le permet. Les bases légales sur lesquelles nous nous appuyons comprennent :</p>
+            <ul>
+                <li><b>Contrat</b> pour fournir les services que vous demandez ou achetez</li>
+                <li><b>Intérêts légitimes</b> pour améliorer notre Site, nos communications et nos services</li>
+                <li><b>Consentement</b> pour les communications marketing et certains cookies</li>
+                <li><b>Obligation légale</b> lorsque nous sommes tenus de respecter des exigences légales</li>
+            </ul>
+            <p>Nous utilisons vos données pour :</p>
+            <ul>
+                <li>Fournir des services de coaching et des produits digitaux</li>
+                <li>Traiter les paiements</li>
+                <li>Répondre aux demandes de contact</li>
+                <li>Envoyer des newsletters ou des mises à jour si vous y avez consenti</li>
+                <li>Améliorer le fonctionnement du Site et l’expérience utilisateur</li>
+                <li>Maintenir la sécurité et prévenir la fraude</li>
+            </ul>
+
+            <h3 class="h3-terms">5. Communications marketing</h3>
+            <p>Vous ne recevrez des communications marketing que si vous y avez consenti ou si vous avez demandé des informations de notre part.</p>
+            <p>Vous pouvez retirer votre consentement à tout moment en utilisant le lien de désinscription dans les e-mails ou en nous contactant directement.</p>
+
+            <h3 class="h3-terms">6. Cookies et outils analytiques</h3>
+            <p>Nous utilisons des cookies et des technologies similaires pour :</p>
+            <ul>
+                <li>Garantir le bon fonctionnement du Site</li>
+                <li>Analyser le trafic du Site</li>
+                <li>Améliorer l’expérience utilisateur</li>
+            </ul>
+            <p>Vous pouvez gérer vos préférences en matière de cookies via les paramètres de votre navigateur ou via notre bannière cookies.</p>
+            <p>Pour plus d’informations, veuillez consulter notre Politique de cookies.</p>
+
+            <h3 class="h3-terms">7. Partage des données</h3>
+            <p>Nous pouvons partager des données personnelles avec des prestataires tiers de confiance, notamment :</p>
+            <ul>
+                <li>Des processeurs de paiement</li>
+                <li>Des fournisseurs d’email marketing</li>
+                <li>Des prestataires d’hébergement de site et d’analyse web</li>
+            </ul>
+            <p>Ces prestataires traitent les données uniquement selon nos instructions et sont contractuellement tenus de protéger vos informations.</p>
+            <p>Nous ne vendons pas vos données personnelles.</p>
+            <p>Nous pouvons divulguer des données si la loi l’exige ou pour protéger nos droits légaux.</p>
+
+            <h3 class="h3-terms">8. Transferts internationaux</h3>
+            <p>Certains prestataires de services peuvent être situés en dehors du Royaume-Uni. Lorsque des données sont transférées à l’international, nous veillons à ce que des garanties appropriées soient mises en place, telles que des clauses contractuelles types ou des protections équivalentes.</p>
+
+            <h3 class="h3-terms">9. Conservation des données</h3>
+            <p>Nous conservons les données personnelles uniquement pendant la durée nécessaire aux finalités pour lesquelles elles ont été collectées, y compris pour répondre aux exigences légales, comptables ou de reporting.</p>
+
+            <h3 class="h3-terms">10. Vos droits</h3>
+            <p>En vertu du UK GDPR, vous avez le droit de :</p>
+            <ul>
+                <li>Accéder à vos données personnelles</li>
+                <li>Demander la rectification de données inexactes</li>
+                <li>Demander l’effacement dans certaines circonstances</li>
+                <li>Limiter le traitement</li>
+                <li>Vous opposer au traitement</li>
+                <li>Demander la portabilité des données</li>
+                <li>Retirer votre consentement à tout moment</li>
+            </ul>
+            <p>Vous avez également le droit d’introduire une réclamation auprès de l’Information Commissioner’s Office (ICO) : www.ico.org.uk</p>
+            <p>Nous vous encourageons toutefois à nous contacter en premier lieu afin de résoudre toute préoccupation.</p>
+
+            <h3 class="h3-terms">11. Sécurité des données</h3>
+            <p>Nous mettons en œuvre des mesures techniques et organisationnelles raisonnables pour protéger les données personnelles contre l’accès non autorisé, l’altération, la divulgation ou la perte. Toutefois, aucune transmission en ligne ne peut être garantie comme étant totalement sécurisée.</p>
+
+            <h3 class="h3-terms">12. Enfants</h3>
+            <p>Ce Site n’est pas destiné aux personnes de moins de 18 ans. Nous ne collectons pas sciemment de données personnelles concernant des enfants.</p>
+
+            <h3 class="h3-terms">13. Modifications de la présente Politique</h3>
+            <p>Nous pouvons mettre à jour la présente Politique de confidentialité à tout moment. La version la plus récente sera toujours disponible sur cette page.</p>
+
+            <h3 class="h3-terms">14. Contact</h3>
+            <p>Pour toute question relative à la présente Politique de confidentialité ou pour exercer vos droits, veuillez nous contacter à l’adresse suivante :</p>
+            <p><a href="mailto:info@nicolebadotti.com"><b>info@nicolebadotti.com</b></a></p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="social-links">
+                <a href="https://www.instagram.com/nicolebadotti" target="_blank" rel="noopener">
+                    <img src="/Images/instagram-icon-white.svg" alt="Instagram" title="@nicolebadotti">
+                </a>
+                <a href="https://www.linkedin.com/in/nicolebadotti/" target="_blank" rel="noopener">
+                    <img src="/Images/linkedin-icon-white.svg" alt="LinkedIn" title="/nicolebadotti">
+                </a>
+                <a href="/index.html" class="language">
+                    <img src="/Images/uk-flag.svg" alt="English UK" title="English (UK)">
+                </a>
+                <a href="/index-br.html" class="language">
+                    <img src="/Images/br-flag.svg" alt="Portugais BR" title="Portugais (BR)">
+                </a>
+            </div>
+            <nav class="footer-right">
+                <ul class="footer-nav">
+                    <li><a href="./index-fr.html">Accueil</a></li>
+                    <li><a href="./index-fr.html#about">À propos</a></li>
+                    <li><a href="./index-fr.html#services">Services</a></li>
+                    <li><a href="./index-fr.html#contact">Contact</a></li>
+                </ul>
+                <ul class="footer-legal">
+                    <li><a href="./conditions-fr.html#terms-of-use">Conditions d’utilisation</a></li>
+                    <li><a href="./conditions-fr.html#disclaimer">Avertissement</a></li>
+                    <li><a href="./conditions-fr.html#cookie-policy">Politique de cookies</a></li>
+                    <li><a href="./conditions-fr.html#privacy">Confidentialité</a></li>
+                </ul>
+            </nav>
+            <p class="footer-copy">© 2026 Nicole Badotti | Respect de soi et bien-être. Tous droits réservés.</p>
+            <div class="footer-spacer"></div>
+        </div>
+    </footer>
+
+    <!-- JavaScript external file -->
+    <script src="./script.js"></script>
+</body>
+</html>
