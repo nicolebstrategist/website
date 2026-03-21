@@ -618,7 +618,7 @@ CONTACT
 
 #contact p b {
     color: var(--ink);
-    font-weight: 800;
+    font-weight: 600;
 }
 
 #contact .cta-button {
