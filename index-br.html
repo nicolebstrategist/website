@@ -77,8 +77,8 @@
             </div>
 
             <div class="nav-cta">
-                <a href="https://calendly.com/nicole-badotti/consulta-inicial" class="cta-button" target="_blank" rel="noopener noreferrer">
-                    AGENDE UMA CONSULTA
+                <a href="#contact" class="cta-button" target="_blank" rel="noopener noreferrer">
+                    TRABALHE COMIGO
                 </a>
             </div>
 
@@ -92,12 +92,11 @@
             <a href="#testimonials" onclick="closeMenu()">Depoimentos</a>
             <a href="#contact" onclick="closeMenu()">Contato</a>
 
-            <a href="https://calendly.com/nicole-badotti/consulta-inicial"
+            <a href="#contact"
                 class="cta-button mobile-cta"
-                target="_blank"
                 rel="noopener noreferrer"
                 onclick="closeMenu()">
-                AGENDE UMA CONSULTA
+                TRABALHE COMIGO
             </a>
 
             <div class="mobile-social">
@@ -262,31 +261,48 @@
         <div>
             <img src="Images/bee-icon.svg" alt="Ícone de abelha" class="bee-icon">
         </div>
+
     </section>
 
     <section id="contact">
-        <div class="contact-inner">
-            <div class="contact-left">
-                <h2>Entre em contato</h2>
+    <div class="contact-inner">
+        <div class="contact-left">
+            <h2>Entre em contato</h2>
 
-                <div class="contact-info">
-                    <p><a href="https://wa.me/+5541987743227" target="_blank"><b>+55 (41) 98774 3227</b></a></p>
-                    <p><a href="mailto:info@nicolebadotti.com" target="_blank"><b>info@nicolebadotti.com</b></a></p>
-                    <p><a href="https://www.instagram.com/nicole.badotti/" target="_blank"><b>@nicole.badotti</b></a></p>
-                </div>
+            <div class="contact-form">
+                <p>Se você quiser explorar a possibilidade de trabalharmos juntos, me envie uma mensagem.</p>
+                <p>Adoraria saber onde você está em sua jornada e como posso te apoiar daqui para frente.</p>
 
-                <a href="https://calendly.com/nicole-badotti/consulta-inicial"
-                    class="cta-button"
-                    target="_blank"
-                    rel="noopener noreferrer">
-                    AGENDE UMA CONSULTA
-                </a>
+                <form action="https://formsubmit.co/info@nicolebadotti.com" method="POST">
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="first_name">Nome</label>
+                            <input type="text" id="first_name" name="first_name" required title="Nome">
+                        </div>
 
-                <img src="Images/bee-icon.svg" alt="Ícone de abelha" class="bee-icon">
+                        <div class="form-field">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" required title="E-mail">
+                        </div>
+                    </div>
+
+                    <div class="form-field form-field-full">
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" name="message" required title="Mensagem"></textarea>
+                    </div>
+
+                    <button class="send-form" type="submit">
+                        <span class="send-text">Enviar</span>
+                        <img src="/Images/send-button.svg" alt="Enviar" title="Enviar">
+                    </button>
+                </form>
+            </div>
+
+            <img src="Images/bee-icon.svg" alt="Bee icon" class="bee-icon">
             </div>
 
             <div class="contact-right">
-                <img src="/Images/nicolebadotti-portrait.webp" alt="Retrato de Nicole Badotti" class="contact-image">
+                <img src="/Images/nicolebadotti-portrait.webp" alt="Portrait Picture" class="contact-image">
             </div>
         </div>
     </section>
@@ -330,7 +346,7 @@
 
     <div id="cookie-banner" class="cookie-banner">
         <p>Para garantir a melhor experiência possível, este site utiliza cookies essenciais e, com a sua permissão, cookies analíticos e outros cookies não essenciais. Você pode aceitar, recusar ou customizar as suas preferências a qualquer momento.
-            <a id="learn-more" href="./cookies.html" target="_blank">Saiba mais</a>
+            <a id="learn-more" href="/conditions-br.html" target="_blank">Saiba mais</a>
         </p>
         <div class="buttons">
             <button id="accept-all">Aceitar</button>

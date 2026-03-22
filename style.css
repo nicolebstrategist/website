@@ -614,6 +614,7 @@ CONTACT
 #contact p {
     margin: 0;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 #contact p b {
@@ -642,6 +643,120 @@ CONTACT
 #contact .contact-image {
     width: 100%;
     max-width: 560px;
+}
+
+/* =========================
+CONTACT FORM
+========================= */
+
+.contact-form{
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-form p{
+    margin-bottom: 10px;
+}
+
+.contact-form p + p{
+    margin-bottom: 28px;
+}
+
+.contact-form form{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.form-row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    width: 100%;
+}
+
+.form-field{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    width: 100%;
+}
+
+.form-field-full{
+    width: 100%;
+}
+
+.form-field label{
+    font-size: 15px;
+    color: var(--ink);
+    text-align: left;
+}
+
+.form-field input,
+.form-field textarea{
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid rgba(0,0,0,0.15);
+    font-size: 15px;
+    line-height: 1.4;
+    font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    background: #fff;
+    color: var(--ink);
+    outline: none;
+}
+
+.form-field input:focus,
+.form-field textarea:focus{
+    border-color: var(--accent);
+}
+
+.form-field textarea{
+    height: 140px;
+    resize: none;
+}
+
+/* Submit button */
+.send-form{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    align-self: center;
+    margin-top: 8px;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 999px;
+    background: transparent;
+    border: 1.5px solid var(--accent);
+    color: #F26A2E;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    line-height: 1;
+}
+
+.send-text{
+    text-decoration: none;
+}
+
+.send-form:hover .send-text{
+    text-decoration: underline;
+}
+
+.send-form img{
+    width: 16px;
+    height: auto;
+    display: block;
+}
+
+.send-form:hover{
+    opacity: 0.92;
 }
 
 /* =========================
@@ -1228,6 +1343,45 @@ RESPONSIVE
     #contact .cta-button {
         width: 100%;
         max-width: 360px;
+    }
+
+    .contact-form{
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+    .contact-form form{
+        gap: 16px;
+    }
+
+    .form-row{
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .form-field{
+        gap: 6px;
+    }
+
+    .form-field label{
+        font-size: 14px;
+        margin-left: 2px;
+    }
+
+    .form-field input,
+    .form-field textarea{
+        width: 100%;
+        font-size: 16px;   /* avoids iPhone zoom */
+        padding: 14px 14px;
+    }
+
+    .form-field textarea{
+        height: 120px;
+    }
+
+    .send-form{
+        align-self: center;
+        margin-top: 6px;
     }
 
     #contact .bee-icon {

@@ -78,7 +78,7 @@
             </div>
 
             <div class="nav-cta">
-                <a href="https://calendly.com/nicolebadotti/initial-consultation" class="cta-button" target="_blank" rel="noopener noreferrer">SCHEDULE A CONSULTATION</a>
+                <a href="#contact" class="cta-button" rel="noopener noreferrer">WORK WITH ME</a>
             </div>
 
             <div class="burger-menu" onclick="toggleMenu()" aria-label="Open menu" role="button">&#9776;</div>
@@ -91,11 +91,11 @@
             <a href="#testimonials" onclick="closeMenu()">Testimonials</a>
             <a href="#contact" onclick="closeMenu()">Contact</a>
 
-            <a href="https://calendly.com/nicolebadotti/initial-consultation"
+            <a href="#contact"
                 class="cta-button mobile-cta"
-                target="_blank" rel="noopener noreferrer"
+                rel="noopener noreferrer"
                 onclick="closeMenu()">
-                SCHEDULE A CONSULTATION
+                WORK WITH ME
             </a>
 
             <div class="mobile-social">
@@ -295,30 +295,45 @@
     <img src="Images/bee-icon.svg" alt="Bee icon" class="bee-icon">
     </section>
 
-    <!-- option + Shift + down arrow to copy selection -->
-
     <section id="contact">
         <div class="contact-inner">
             <div class="contact-left">
-            <h2>Let’s connect</h2>
+                <h2>Let’s connect</h2>
 
-            <div class="contact-info">
-                <p><a href="https://wa.me/+4407494480448" target="_blank"><b>+44 (0) 7494 480 448</b></a></p>
-                <p><a href="mailto:info@nicolebadotti.com" target="_blank"><b>info@nicolebadotti.com</b></a></p>
-                <p><a href="https://www.instagram.com/nicolebadotti/" target="_blank"><b>@nicolebadotti</b></a></p>
-            </div>
+                <div class="contact-form">
+                    <p>If you'd like to explore working together, send me a message.</p>
+                    <p>I'd love to hear where you are right now and how I can support you on your journey.</p>
 
-            <a href="https://calendly.com/nicolebadotti/free-consultation"
-                class="cta-button"
-                target="_blank" rel="noopener noreferrer">
-                SCHEDULE A CONSULTATION
-            </a>
+                    <form action="https://formsubmit.co/info@nicolebadotti.com" method="POST">
+                        <div class="form-row">
+                            <div class="form-field">
+                                <label for="first_name">Name</label>
+                                <input type="text" id="first_name" name="first_name" required title="Name">
+                            </div>
 
-            <img src="Images/bee-icon.svg" alt="Bee icon" class="bee-icon">
+                            <div class="form-field">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required title="Email address">
+                            </div>
+                        </div>
+
+                        <div class="form-field form-field-full">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required title="Message"></textarea>
+                        </div>
+
+                        <button class="send-form" type="submit">
+                            <span class="send-text">Send</span>
+                            <img src="/Images/send-button.svg" alt="Send" title="Send">
+                        </button>
+                    </form>
+                </div>
+
+                <img src="Images/bee-icon.svg" alt="Bee icon" class="bee-icon">
             </div>
 
             <div class="contact-right">
-            <img src="/Images/nicolebadotti-portrait.webp" alt="Portrait Picture" class="contact-image">
+                <img src="/Images/nicolebadotti-portrait.webp" alt="Portrait Picture" class="contact-image">
             </div>
         </div>
     </section>
@@ -381,7 +396,7 @@
 
     <div id="cookie-banner" class="cookie-banner">
         <p>To ensure you get the best experience, this website uses essential cookies and, with your permission, analytics and other non-essential cookies. You can accept, decline, or customise your preferences at any time.
-            <a id="learn-more" href="./cookies.html" target="_blank">Learn more</a>
+            <a id="learn-more" href="/conditions.html" target="_blank">Learn more</a>
         </p>
         <div class="buttons">
             <button id="accept-all">Accept</button>
