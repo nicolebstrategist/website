@@ -696,7 +696,7 @@ PROGRAMMES
     font-weight: 400;
 }
 
-#the-growth p{
+#the-growth p, #projects p{
     margin: 10px 0px;
 }
 
