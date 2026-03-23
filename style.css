@@ -13,7 +13,7 @@ html {
 }
 
 body {
-    font-family: "DM Sans", sans-serif;
+    font-family: "Montserrat", sans-serif;
     line-height: 1.55;
     color: #3a2a1f;
     background: #fbf3e6;
@@ -76,29 +76,29 @@ h2 {
 }
 
 h3 {
-    font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    font-family: "DM Sans", sans-serif;
     font-weight: 500;
-    font-size: 28px;
+    font-size: 25px;
     letter-spacing: 0.2px;
     color: var(--accent);
 }
 
 h4 {
-    font-family: "DM Sans", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 18px;
     letter-spacing: 0.2px;
     margin-top: 14px;
 }
 
 p {
-    font-size: 17px;
+    font-size: 16px;
     color: var(--muted);
     text-align: justify;
 }
 
 li {
-    font-size: 17px;
+    font-size: 16px;
 }
 
 .phrase {
@@ -133,7 +133,7 @@ BUTTONS
     border-radius: var(--pill);
     padding: 12px 18px;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 13px;
     letter-spacing: 0.3px;
     cursor: pointer;
     white-space: nowrap;
@@ -150,7 +150,7 @@ a.cta-button {
     justify-content: center;
     line-height: 1;
     text-align: center;
-    font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    font-family: "DM Sans", sans-serif;
 }
 
 /* =========================
@@ -197,7 +197,7 @@ header {
     color: var(--accent);
     font-weight: 600;
     font-size: 17px;
-    font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    font-family: "DM Sans", sans-serif;
 }
 
 .menu a:hover {
@@ -242,7 +242,7 @@ header {
     font-weight: 600;
     color: var(--accent);
     text-align: center;
-    font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    font-family: "DM Sans", sans-serif;
 }
 
 #mobile-menu a.cta-button,
@@ -252,7 +252,7 @@ header {
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    font-family: "DM Sans", sans-serif;
 }
 
 #mobile-menu a.cta-button {
@@ -528,8 +528,8 @@ TESTIMONIALS
 }
 
 .testimonial-text {
-    font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-    font-size: 23px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 20px;
     line-height: 1.45;
     color: var(--ink);
     max-width: 980px;
@@ -538,8 +538,8 @@ TESTIMONIALS
 }
 
 .testimonial-author {
-    font-family: "DM Sans", sans-serif;
-    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
     color: var(--ink);
     text-align: center;
 }
@@ -704,7 +704,7 @@ CONTACT FORM
     border: 1px solid rgba(0,0,0,0.15);
     font-size: 15px;
     line-height: 1.4;
-    font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    font-family: "DM Sans", sans-serif;
     background: #fff;
     color: var(--ink);
     outline: none;
@@ -737,7 +737,7 @@ CONTACT FORM
     cursor: pointer;
     font-size: 14px;
     font-weight: 600;
-    font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    font-family: "DM Sans", sans-serif;
     line-height: 1;
 }
 
@@ -817,7 +817,7 @@ FOOTER
     color: #fff;
     font-size: 16px;
     line-height: 1.2;
-    font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    font-family: "DM Sans", sans-serif;
 }
 
 .footer-legal a {
@@ -851,7 +851,7 @@ COOKIE BANNER
 
 .cookie-banner p {
     margin: 10px;
-    font-size: 16px;
+    font-size: 14px;
     text-align: justify;
 }
 
@@ -882,7 +882,7 @@ COOKIE BANNER
 #accept-all {
     padding: 10px 13px;
     background-color: #fbf3e6;
-    color: black;
+    color: #4a2a1e;
 }
 
 #accept-all:hover {
@@ -962,7 +962,7 @@ COOKIE BANNER
 }
 
 #preference-modal a {
-    color: black;
+    color: #4a2a1e;
     font-size: 14px;
     text-decoration: underline;
     margin-bottom: 20px;
@@ -1145,7 +1145,7 @@ RESPONSIVE
 
     p,
     li {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     header {
@@ -1308,7 +1308,7 @@ RESPONSIVE
     }
 
     .testimonial-author {
-        font-size: 17px;
+        font-size: 16px;
         font-weight: 300;
     }
 
