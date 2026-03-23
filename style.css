@@ -343,7 +343,7 @@ ABOUT
     padding: 0 28px;
     font-family: "Playfair Display", Georgia, "Times New Roman", serif;
     color: var(--accent);
-    font-size: 35px;
+    font-size: 34px;
     line-height: 1.2;
     text-align: center;
 }
@@ -388,7 +388,7 @@ ABOUT
 
 .values b {
     color: var(--ink);
-    font-weight: 800;
+    font-weight: 700;
 }
 
 /* =========================
@@ -413,6 +413,10 @@ SERVICES
 }
 
 #services .service-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   /* horizontal centering */
+    text-align: center;
     grid-column: 1;
     justify-self: center;
     width: min(560px, 100%);
@@ -421,6 +425,18 @@ SERVICES
     padding: 20px;
     background: transparent;
     margin-top: 25px;
+}
+
+#services .service-box .cta-button{
+    background: transparent;
+    color: #f36a2e;
+    align-self: center;
+    margin-top: 8px;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 999px;
+    background: transparent;
+    border: 1.5px solid var(--accent);
 }
 
 #services .service-box h3 {
@@ -456,7 +472,7 @@ SERVICES
     padding: 0 28px;
     font-family: "Playfair Display", Georgia, "Times New Roman", serif;
     color: var(--accent);
-    font-size: 35px;
+    font-size: 34px;
     line-height: 1.08;
     text-align: center;
 }
@@ -633,7 +649,15 @@ PROGRAMMES
 }
 
 #respect-method .cta-button{
-    padding: 14px 26px;
+    background: transparent;
+    color: #f36a2e;
+    align-self: center;
+    margin-top: 8px;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 999px;
+    background: transparent;
+    border: 1.5px solid var(--accent);
 }
 
 #respect-method-page h2,
@@ -718,7 +742,7 @@ PROGRAMMES
 }
 
 #call .cta-button{
-    margin-top: 30px;
+    margin: 30px 0px;
 }
 
 #call h2{
