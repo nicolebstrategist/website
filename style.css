@@ -668,7 +668,7 @@ PROGRAMMES
     max-width: 100%;
 }
 
-#respect-method-page p{
+#respect-method-page p, #introduction p, #foundation p{
     margin: 10px 0px;
 }
 
