@@ -320,6 +320,10 @@ HERO
     margin-bottom: 14px;
 }
 
+.hero-text a:hover{
+    text-decoration: underline;
+}
+
 /* =========================
 ABOUT
 ========================= */
