@@ -336,7 +336,6 @@ ABOUT
     background: #fffaf4;
     width: 100vw;
     margin-left: calc(50% - 50vw);
-    margin-bottom: 50px;
     padding: 56px 0;
     text-align: center;
 }
@@ -881,6 +880,11 @@ CONTACT
 #contact .contact-image {
     width: 100%;
     max-width: 450px;
+}
+
+#contact .contact-image2 {
+    width: 100%;
+    max-width: 500px;
 }
 
 /* =========================
@@ -1464,7 +1468,6 @@ RESPONSIVE
         width: 100%;
         margin-left: 0;
         padding: 44px 0 52px;
-        margin-bottom: 0;
     }
 
     .about-highlight .phrase {
