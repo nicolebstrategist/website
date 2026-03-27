@@ -873,12 +873,14 @@ CONTACT
 
 #contact .contact-right {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 #contact .contact-image {
     width: 100%;
-    max-width: 560px;
+    max-width: 450px;
 }
 
 /* =========================
