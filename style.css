@@ -513,6 +513,7 @@ TESTIMONIALS
     max-width: none;
     background: #fffaf4;
     padding: 90px 28px;
+    min-height: 90vh;
 }
 
 #testimonials h2 {
