@@ -47,7 +47,7 @@ img {
 TOKENS
 ========================= */
 :root {
-    --container: 1200px;
+    --container: 1350px;
     --accent: #f36a2e;
     --ink: #4d291a;
     --muted: #4d291a;
@@ -1475,7 +1475,7 @@ RESPONSIVE
     }
 
     .about-highlight .phrase {
-        font-size: 25px;
+        font-size: 26px;
         line-height: 1.05;
         padding: 0 28px;
     }
@@ -1513,7 +1513,7 @@ RESPONSIVE
     }
 
     #services .transformation .phrase {
-        font-size: 30px;
+        font-size: 26px;
         text-align: center;
     }
 
