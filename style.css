@@ -171,7 +171,7 @@ header {
     width: 100%;
     max-width: var(--container);
     margin: 0 auto;
-    padding: 0 28px 12px;
+    padding: 0 10px 12px;
     display: grid;
     grid-template-columns: 220px 1fr auto auto;
     align-items: center;
@@ -1420,7 +1420,6 @@ RESPONSIVE
     .burger-menu {
         grid-column: 3;
         display: flex;
-        width: 44px;
         height: 44px;
         margin: 0;
     }
