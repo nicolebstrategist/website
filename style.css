@@ -225,6 +225,10 @@ header {
     border-radius: 10px;
 }
 
+.nav-flags {
+    display: none;
+}
+
 /* Mobile dropdown */
 .mobile-menu {
     display: none;
@@ -1402,9 +1406,22 @@ RESPONSIVE
     }
 
     .navbar {
-        grid-template-columns: auto 1fr auto;
+        grid-template-columns: auto 1fr auto auto;
         padding: 0 18px 12px;
         gap: 14px;
+    }
+
+    .nav-flags {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        grid-column: 3;
+    }
+
+    .nav-flags img {
+        width: 22px;
+        height: 22px;
+        display: block;
     }
 
     .navbar .social-links {
@@ -1421,7 +1438,7 @@ RESPONSIVE
     }
 
     .burger-menu {
-        grid-column: 3;
+        grid-column: 4;
         display: flex;
         height: 44px;
         margin: 0;
@@ -1449,15 +1466,6 @@ RESPONSIVE
         letter-spacing: 0.3px;
     }
 
-    #mobile-menu .language {
-        padding: 10px 6px;
-        width: fit-content;
-    }
-
-    #mobile-menu a.language img {
-        width: 22px;
-        height: 22px;
-    }
 
     #hero {
         grid-template-columns: 1fr;
