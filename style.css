@@ -1413,9 +1413,15 @@ RESPONSIVE
 
     .nav-flags {
         display: flex;
+        flex-direction: row;
         align-items: center;
         gap: 10px;
         grid-column: 3;
+    }
+
+    .nav-flags a {
+        display: flex;
+        align-items: center;
     }
 
     .nav-flags img {
