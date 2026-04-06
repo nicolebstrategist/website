@@ -1412,16 +1412,24 @@ RESPONSIVE
     }
 
     .nav-flags {
+        display: -webkit-flex;
         display: flex;
+        -webkit-flex-direction: row;
         flex-direction: row;
+        -webkit-align-items: center;
         align-items: center;
-        gap: 10px;
         grid-column: 3;
     }
 
     .nav-flags a {
+        display: -webkit-flex;
         display: flex;
+        -webkit-align-items: center;
         align-items: center;
+    }
+
+    .nav-flags a:first-child {
+        margin-right: 10px;
     }
 
     .nav-flags img {
