@@ -742,10 +742,15 @@ PROGRAMMES
     min-height: 70vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;   /* vertical centre */
-    align-items: center;       /* horizontal centre */
+    justify-content: center;
+    align-items: center;
     padding: 40px 28px;
     text-align: center;
+    background: #fff5ee;
+    width: 100vw;
+    max-width: none;
+    margin-left: calc(50% - 50vw);
+    margin-right: 0;
 }
 
 #call {
