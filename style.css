@@ -756,7 +756,7 @@ PROGRAMMES
 .call-inner {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 60px;
+    gap: 70px;
     align-items: center;
     max-width: var(--container);
     margin: 0 auto;
@@ -816,6 +816,71 @@ PROGRAMMES
     margin-top: 20px;
     align-self: center;
 }
+
+/* =========================
+ESPAÇO CONSCIENTE
+========================= */
+
+#espaco-consciente {
+    width: 100%;
+    max-width: none;
+    padding: 40px 28px;
+}
+
+.espaco-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+    max-width: var(--container);
+    margin: 0 auto;
+}
+
+.espaco-text {
+    text-align: justify;
+}
+
+.espaco-image img {
+    width: 100%;
+}
+
+#espaco-consciente p {
+    margin: 10px 0px;
+}
+
+.espaco-text h2 {
+    margin-top: 30px;
+}
+
+.ec-highlight {
+    background: #fff5ee;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    padding: 56px 0;
+    text-align: center;
+}
+
+.ec-highlight .phrase {
+    max-width: var(--container);
+    margin: 0 auto;
+    padding: 0 28px;
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+    font-size: 32px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--accent);
+}
+
+.ec-highlight .bee-icon {
+    margin: 30px auto 0;
+}
+
+.espaco-text ul {
+    list-style: disc;
+    padding-left: 1.2em;
+    margin: 8px 0 16px;
+}
+
 
 /* =========================
 CONTACT
@@ -1597,6 +1662,15 @@ RESPONSIVE
 
     #testimonials .bee-icon{
         margin-top: 20px;
+    }
+
+    .espaco-inner {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .espaco-text {
+        text-align: left;
     }
 
     #contact {
