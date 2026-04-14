@@ -522,7 +522,6 @@ TESTIMONIALS
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: stretch;
 }
 
 #testimonials h2 {
@@ -854,7 +853,7 @@ ESPAÇO CONSCIENTE
 }
 
 #espaco-consciente p {
-    margin: 12px 0px;
+    margin: 10px 0px;
 }
 
 .espaco-text h2 {
@@ -888,10 +887,6 @@ ESPAÇO CONSCIENTE
     list-style: disc;
     padding-left: 1.2em;
     margin: 8px 0 16px;
-}
-
-.espaco-text li {
-    margin-bottom: 12px;
 }
 
 
@@ -1092,12 +1087,167 @@ CONTACT FORM
 }
 
 /* =========================
+NEWSLETTER BANNER
+========================= */
+.nb-newsletter {
+    background: var(--accent);
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 18px 28px;
+}
+
+.nb-inner {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    max-width: var(--container);
+    margin: 0 auto;
+}
+
+.nb-text {
+    flex: 1;
+}
+
+.nb-label {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.nb-heading {
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    font-size: clamp(1rem, 2vw, 1.3rem);
+    line-height: 1.35;
+    color: #fff;
+    margin-bottom: 0.35rem;
+}
+
+.nb-heading em {
+    font-style: italic;
+    font-weight: 600;
+}
+
+.nb-tagline {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 300;
+    font-size: 0.9rem;
+    letter-spacing: 0.03em;
+    color: rgba(255,255,255,0.6);
+}
+
+.nb-divider {
+    width: 1px;
+    height: 70px;
+    background: rgba(255,255,255,0.2);
+    flex-shrink: 0;
+}
+
+.nb-form {
+    flex: 0 0 240px;
+}
+
+.nb-form form {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 1rem;
+}
+
+.nb-form input[type="text"],
+.nb-form input[type="email"] {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255,255,255,0.35);
+    color: #fff;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 300;
+    font-size: 0.8rem;
+    padding: 0.4rem 0;
+    outline: none;
+    transition: border-color 0.25s ease;
+    flex: 1;
+    min-width: 0;
+}
+
+.nb-form input[type="email"] {
+    flex: 2;
+}
+
+.nb-form input[type="text"]::placeholder,
+.nb-form input[type="email"]::placeholder {
+    color: rgba(255,255,255,0.7);
+}
+
+.nb-form input[type="text"]:focus,
+.nb-form input[type="email"]:focus {
+    border-bottom-color: rgba(255,255,255,0.75);
+}
+
+.nb-form button {
+    background: #fff;
+    color: var(--accent);
+    border: none;
+    padding: 0.55rem 1.25rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 0.65rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.25s ease;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.nb-form button:hover {
+    background: #fbf3e6;
+}
+
+.nb-privacy {
+    margin-top: 0.5rem;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 300;
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.6);
+}
+
+.nb-success {
+    display: none;
+    font-family: "Montserrat", sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 0.95rem;
+    color: #fff;
+    line-height: 1.6;
+}
+
+.nb-form--success {
+    flex: 0 0 320px;
+}
+
+/* =========================
 FOOTER
 ========================= */
 .site-footer {
     background: var(--accent);
     color: #fff;
-    padding: 18px 28px 14px;
+    padding: 0 28px 14px;
+}
+
+.site-footer::before {
+    content: '';
+    display: block;
+    width: 100%;
+    max-width: var(--container);
+    height: 1px;
+    background: rgba(255,255,255,0.3);
+    margin: 0 auto 18px;
 }
 
 .footer-inner {
@@ -1765,6 +1915,34 @@ RESPONSIVE
 
     .contact-right p {
         text-align: center;
+    }
+
+    .nb-newsletter {
+        padding: 1.75rem 20px;
+    }
+
+    .nb-inner {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .nb-divider {
+        width: 40px;
+        height: 1px;
+    }
+
+    .nb-form {
+        flex: 1;
+        width: 100%;
+    }
+
+    .nb-form form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .nb-form button {
+        width: 100%;
     }
 
     .footer-inner {
