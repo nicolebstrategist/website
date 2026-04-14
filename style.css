@@ -1236,6 +1236,8 @@ SUBSCRIBE SUCCESS
 ========================= */
 #subscribe-success {
     min-height: calc(100vh - 90px);
+    max-width: none;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1243,6 +1245,7 @@ SUBSCRIBE SUCCESS
     text-align: center;
     padding: 80px 28px;
     gap: 20px;
+    box-sizing: border-box;
 }
 
 #subscribe-success h1 {
