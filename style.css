@@ -519,6 +519,10 @@ TESTIMONIALS
     background: #fffaf4;
     padding: 90px 28px;
     min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
 }
 
 #testimonials h2 {
