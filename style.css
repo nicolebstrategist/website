@@ -850,7 +850,7 @@ ESPAÇO CONSCIENTE
 }
 
 #espaco-consciente p {
-    margin: 10px 0px;
+    margin: 12px 0px;
 }
 
 .espaco-text h2 {
@@ -884,6 +884,10 @@ ESPAÇO CONSCIENTE
     list-style: disc;
     padding-left: 1.2em;
     margin: 8px 0 16px;
+}
+
+.espaco-text li {
+    margin-bottom: 12px;
 }
 
 
