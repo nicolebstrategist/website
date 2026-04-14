@@ -1232,6 +1232,38 @@ NEWSLETTER BANNER
 }
 
 /* =========================
+SUBSCRIBE SUCCESS
+========================= */
+#subscribe-success {
+    min-height: calc(100vh - 90px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 28px;
+    gap: 20px;
+}
+
+#subscribe-success h1 {
+    margin-bottom: 0;
+}
+
+#subscribe-success p {
+    max-width: 520px;
+    margin: 0;
+    text-align: center;
+}
+
+#subscribe-success .bee-icon {
+    margin-bottom: 8px;
+}
+
+#subscribe-success .cta-button {
+    margin-top: 12px;
+}
+
+/* =========================
 FOOTER
 ========================= */
 .site-footer {
@@ -1943,6 +1975,10 @@ RESPONSIVE
 
     .nb-form button {
         width: 100%;
+    }
+
+    .nb-privacy {
+        text-align: center;
     }
 
     .footer-inner {
