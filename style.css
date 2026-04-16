@@ -1938,6 +1938,12 @@ RESPONSIVE
         margin-right: auto;
     }
 
+    #contact .contact-image,
+    #contact .contact-image2 {
+        max-width: 340px;
+        margin: 0 auto;
+    }
+
     .call-inner {
         grid-template-columns: 1fr;
         gap: 30px;
