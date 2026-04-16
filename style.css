@@ -1953,6 +1953,10 @@ RESPONSIVE
         text-align: center;
     }
 
+    .nb-heading {
+        font-size: 17px;
+    }
+
     .nb-newsletter {
         padding: 1.75rem 20px;
     }
