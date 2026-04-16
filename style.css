@@ -1122,15 +1122,10 @@ NEWSLETTER BANNER
 .nb-heading {
     font-family: "Playfair Display", serif;
     font-weight: 400;
-    font-size: clamp(1rem, 2vw, 1.3rem);
+    font-size: 20px;
     line-height: 1.35;
     color: #fff;
     margin-bottom: 0.35rem;
-}
-
-.nb-heading em {
-    font-style: italic;
-    font-weight: 600;
 }
 
 .nb-tagline {
