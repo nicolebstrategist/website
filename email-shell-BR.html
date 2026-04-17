@@ -33,7 +33,7 @@ p {
   line-height:1.75;
   color:#4d291a;
   margin:0 0 18px 0;
-  text-align: justify;
+  text-align:justify;
 }
 
 h2 {
@@ -94,7 +94,7 @@ a {
   font-style:italic;
   color:#f36a2e;
   margin:0 0 24px 0;
-  text-align: center;
+  text-align:center;
 }
 
 .email-signature-name {
@@ -102,7 +102,7 @@ a {
   font-size:24px;
   font-weight:600;
   color:#4d291a;
-  margin:10px 0 0 0;
+  margin:10px 0 5px 0;
   text-align:center;
 }
 
@@ -126,6 +126,10 @@ a {
   margin:0 0 6px 0;
   text-align:center;
 }
+
+.email-footer a {
+  color:#fff;
+}
 </style>
 </head>
 
@@ -137,42 +141,30 @@ a {
 
 <p style="font-family:Georgia,serif;font-size:20px;">Olá, {{ subscriber.first_name }},</p>
 
-<p>Obrigada por se inscrever. É um prazer ter você aqui.</p>
-
-<p>Você receberá a Respect Newsletter a cada duas semanas. Cada edição traz reflexões, ferramentas práticas e perspectivas honestas sobre como construir uma vida que seja genuinamente sua.</p>
-
-<p>Como boas-vindas, preparei algo para você começar já.</p>
+<p>Texto</p>
 
 <div class="email-highlight">
-<h3>Mapa do Autorrespeito</h3>
+<h3>Título</h3>
 
-<p>Um exercício reflexivo breve, criado para ajudá-la a enxergar com mais clareza onde o autorrespeito já está presente na sua vida e onde ainda não está.</p>
+<p>Texto</p>
 
-<p style="font-style:italic;opacity:0.6;">Sem pontuações, sem julgamentos. Apenas clareza.</p>
+<p style="font-style:italic;opacity:0.6;">Subtexto</p>
 
-<a href="https://canva.link/bpo2jk92z1zmq7q" class="email-cta">Baixar aqui</a>
+<a href="https://www.nicolebadotti.com" class="email-cta">Botão</a>
 </div>
 
-<h2>Antes de começar</h2>
+<h2>h2</h2>
 
-<h3>Quem sou eu</h3>
-<p>Sou Nicole Badotti, Health and Wellness Coach certificada pela UKIHCA. Trabalho com pessoas que parecem bem-sucedidas por fora, mas se sentem sobrecarregadas, autocríticas ou desconectadas de si mesmas. Por meio do meu programa, o <a href="https://www.nicolebadotti.com/respect-method.html">Respect Method</a>, as guio em direção à clareza e a decisões intencionais para que possam retomar a autoria das suas próprias vidas.</p>
-
-<h3>O que esperar</h3>
-<p>A Respect Newsletter não é sobre fazer mais. É sobre escolher melhor. Cada edição é escrita com intenção e mantida concisa, para que você possa ler no seu próprio ritmo.</p>
-
-<h3>Garanta que meus e-mails cheguem até você</h3>
-<p>Se você usa Gmail, arraste este e-mail para a aba Principal. Se usa Apple Mail, adicione meu endereço aos seus contatos.</p>
-
-<h3>Quer ir mais fundo?</h3>
-<p>Se você tiver curiosidade sobre como trabalharmos juntas, visite <a href="https://www.nicolebadotti.com">nicolebadotti.com</a> ou simplesmente responda a este e-mail.</p>
+<h3>h3</h3>
+<p>Texto</p>
 
 <hr class="email-divider">
 
 <div class="email-signature">
 <p class="email-signature-phrase">Consciência é o primeiro passo.<br>Autorrespeito é o que transforma.</p>
 <p class="email-signature-name">Nicole Badotti</p>
-<p class="email-signature-title">Health and Wellness Coach</p>
+<p class="email-signature-title">Mentora de Saúde e Bem-Estar</p>
+<p style="text-align:center;"><a href="https://www.nicolebadotti.com">www.nicolebadotti.com</a></p>
 </div>
 
 </td>
@@ -182,8 +174,8 @@ a {
 <td class="email-footer">
 <p>Londres, Reino Unido</p>
 <p>
-<a href="{{ unsubscribe_url }}" style="color:rgba(255,255,255,0.8);">Cancelar inscrição</a> |
-<a href="{{ subscriber_preferences_url }}" style="color:rgba(255,255,255,0.8);">Preferências</a>
+<a href="{{ unsubscribe_url }}">Cancelar inscrição</a> |
+<a href="{{ subscriber_preferences_url }}">Preferências</a>
 </p>
 </td>
 </tr>

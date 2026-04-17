@@ -250,4 +250,53 @@ document.addEventListener("DOMContentLoaded", () => {
     setTimeout(startTestimonialAutoplay, 2000);
     }
 
+    // ======================
+    // EXIT-INTENT POPUP
+    // ======================
+    const exitPopup = document.getElementById("exit-popup");
+
+    if (exitPopup) {
+        const exitPopupClose = exitPopup.querySelector(".exit-popup-close");
+        const exitPopupForm = document.getElementById("exit-popup-form");
+        const exitPopupSuccess = document.getElementById("exit-popup-success");
+        function openExitPopup() {
+            exitPopup.classList.add("active");
+            sessionStorage.setItem("exitPopupShown", "true");
+        }
+
+        function closeExitPopup() {
+            exitPopup.classList.remove("active");
+        }
+
+        if (!sessionStorage.getItem("exitPopupShown")) {
+            setTimeout(openExitPopup, 8000);
+        }
+
+        exitPopupClose.addEventListener("click", closeExitPopup);
+
+        exitPopup.addEventListener("click", (e) => {
+            if (e.target === exitPopup) closeExitPopup();
+        });
+
+        document.addEventListener("keydown", (e) => {
+            if (e.key === "Escape") closeExitPopup();
+        });
+
+        if (exitPopupForm) {
+            exitPopupForm.addEventListener("submit", async (e) => {
+                e.preventDefault();
+                try {
+                    await fetch(exitPopupForm.action, {
+                        method: "POST",
+                        body: new FormData(exitPopupForm),
+                    });
+                } catch (_) {}
+                exitPopupForm.style.display = "none";
+                const privacyNote = exitPopup.querySelector(".exit-popup-privacy");
+                if (privacyNote) privacyNote.style.display = "none";
+                if (exitPopupSuccess) exitPopupSuccess.style.display = "block";
+            });
+        }
+    }
+
 });

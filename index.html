@@ -461,6 +461,23 @@
         </div>
     </div>
 
+    <!-- Exit-intent popup -->
+    <div id="exit-popup" class="exit-popup" role="dialog" aria-modal="true" aria-label="Newsletter signup">
+        <div class="exit-popup-card">
+            <button class="exit-popup-close" aria-label="Close">&times;</button>
+            <p class="nb-label">Newsletter</p>
+            <h2 class="exit-popup-heading">Do you treat yourself with the respect you deserve?</h2>
+            <p class="exit-popup-desc">Subscribe and receive the Self-Respect Map, a reflective exercise to help you see clearly where self-respect is present in your life and where it is not.</p>
+            <form action="https://app.kit.com/forms/9322503/subscriptions" method="post" id="exit-popup-form">
+                <input type="text" name="fields[first_name]" placeholder="First name" autocomplete="given-name">
+                <input type="email" name="email_address" placeholder="Email address" required autocomplete="email">
+                <button type="submit">Subscribe</button>
+            </form>
+            <p class="nb-privacy exit-popup-privacy">No spam. Unsubscribe at any time.</p>
+            <p class="exit-popup-success" id="exit-popup-success">Success! Now check your email to confirm your subscription.</p>
+        </div>
+    </div>
+
     <!-- JavaScript external file -->
     <script src="./script.js"></script>
 </body>
