@@ -1230,18 +1230,22 @@ NEWSLETTER BANNER
 EXIT-INTENT POPUP
 ========================= */
 .exit-popup {
-    display: none;
     position: fixed;
     inset: 0;
     background: rgba(0, 0, 0, 0.5);
     z-index: 1000;
+    display: flex;
     align-items: center;
     justify-content: center;
     padding: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
 }
 
 .exit-popup.active {
-    display: flex;
+    opacity: 1;
+    visibility: visible;
 }
 
 .exit-popup-card {

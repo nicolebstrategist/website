@@ -356,6 +356,23 @@
         }
     </script>
 
+    <!-- Newsletter popup -->
+    <div id="exit-popup" class="exit-popup" role="dialog" aria-modal="true" aria-label="Inscrição na newsletter">
+        <div class="exit-popup-card">
+            <button class="exit-popup-close" aria-label="Fechar">&times;</button>
+            <p class="nb-label">Newsletter</p>
+            <h2 class="exit-popup-heading">Você se trata com o respeito que merece?</h2>
+            <p class="exit-popup-desc">Inscreva-se e receba o Mapa do Autorrespeito, um exercício reflexivo para ver com clareza onde o autorrespeito está presente na sua vida e onde ele não está.</p>
+            <form action="https://app.kit.com/forms/9322503/subscriptions" method="post" id="exit-popup-form">
+                <input type="text" name="fields[first_name]" placeholder="Nome" autocomplete="given-name">
+                <input type="email" name="email_address" placeholder="Endereço de e-mail" required autocomplete="email">
+                <button type="submit">Inscrever-se</button>
+            </form>
+            <p class="nb-privacy exit-popup-privacy">Sem spam. Cancele quando quiser.</p>
+            <p class="exit-popup-success" id="exit-popup-success">Você está quase lá! Verifique seu e-mail para confirmar a sua inscrição.</p>
+        </div>
+    </div>
+
     <script src="./script.js"></script>
 </body>
 </html>
