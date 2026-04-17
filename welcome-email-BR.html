@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+  margin:0;
+  padding:0;
+  background:#fbf3e6;
+}
+
+.email-wrapper {
+  width:100%;
+  background:#fbf3e6;
+}
+
+.email-container {
+  width:100% !important;
+  max-width:680px !important;
+  margin:0 auto;
+}
+
+.email-body {
+  background:#ffffff;
+  padding:10px;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:15px;
+  line-height:1.75;
+  color:#4d291a;
+  margin:0 0 18px 0;
+  text-align: justify;
+}
+
+h2 {
+  font-family: Georgia, serif;
+  font-size:26px;
+  color:#f36a2e;
+  margin:36px 0 12px 0;
+  padding-top:36px;
+  border-top:1px solid #f0e4d4;
+}
+
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:18px;
+  font-weight:700;
+  color:#4d291a;
+  margin:24px 0 6px 0;
+}
+
+a {
+  color:#4d291a;
+  text-decoration:none;
+}
+
+.email-highlight {
+  background:#fbf3e6;
+  border-left:3px solid #f36a2e;
+  padding:20px;
+  margin:24px 0;
+}
+
+.email-cta {
+  display:inline-block;
+  background:#f36a2e;
+  color:#fff;
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:0.18em;
+  text-transform:uppercase;
+  padding:12px 24px;
+  border-radius:999px;
+  text-decoration:none;
+}
+
+.email-divider {
+  border:none;
+  border-top:1px solid #f0e4d4;
+  margin:36px 0;
+}
+
+.email-signature {
+  text-align:center;
+}
+
+.email-signature-phrase {
+  font-family: Georgia, serif;
+  font-size:26px;
+  font-style:italic;
+  color:#f36a2e;
+  margin:0 0 24px 0;
+  text-align: center;
+}
+
+.email-signature-name {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:24px;
+  font-weight:600;
+  color:#4d291a;
+  margin:10px 0 0 0;
+  text-align:center;
+}
+
+.email-signature-title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:14px;
+  color:#4d291a;
+  opacity:0.7;
+  text-align:center;
+}
+
+.email-footer {
+  background:#f36a2e;
+  padding:24px;
+  text-align:center;
+}
+
+.email-footer p {
+  font-size:12px;
+  color:rgba(255,255,255,0.8);
+  margin:0 0 6px 0;
+  text-align:center;
+}
+</style>
+</head>
+
+<body>
+<div class="email-wrapper">
+<table class="email-container" cellpadding="0" cellspacing="0" width="100%" style="max-width:680px;">
+<tr>
+<td class="email-body">
+
+<p style="font-family:Georgia,serif;font-size:20px;">Olá, {{ subscriber.first_name }},</p>
+
+<p>Obrigada por se inscrever. É um prazer ter você aqui.</p>
+
+<p>Você receberá a Respect Newsletter a cada duas semanas. Cada edição traz reflexões, ferramentas práticas e perspectivas honestas sobre como construir uma vida que seja genuinamente sua.</p>
+
+<p>Como boas-vindas, preparei algo para você começar já.</p>
+
+<div class="email-highlight">
+<h3>Mapa do Autorrespeito</h3>
+
+<p>Um exercício reflexivo breve, criado para ajudá-la a enxergar com mais clareza onde o autorrespeito já está presente na sua vida e onde ainda não está.</p>
+
+<p style="font-style:italic;opacity:0.6;">Sem pontuações, sem julgamentos. Apenas clareza.</p>
+
+<a href="https://canva.link/bpo2jk92z1zmq7q" class="email-cta">Baixar aqui</a>
+</div>
+
+<h2>Antes de começar</h2>
+
+<h3>Quem sou eu</h3>
+<p>Sou Nicole Badotti, Health and Wellness Coach certificada pela UKIHCA. Trabalho com pessoas que parecem bem-sucedidas por fora, mas se sentem sobrecarregadas, autocríticas ou desconectadas de si mesmas. Por meio do meu programa, o <a href="https://www.nicolebadotti.com/respect-method.html">Respect Method</a>, as guio em direção à clareza e a decisões intencionais para que possam retomar a autoria das suas próprias vidas.</p>
+
+<h3>O que esperar</h3>
+<p>A Respect Newsletter não é sobre fazer mais. É sobre escolher melhor. Cada edição é escrita com intenção e mantida concisa, para que você possa ler no seu próprio ritmo.</p>
+
+<h3>Garanta que meus e-mails cheguem até você</h3>
+<p>Se você usa Gmail, arraste este e-mail para a aba Principal. Se usa Apple Mail, adicione meu endereço aos seus contatos.</p>
+
+<h3>Quer ir mais fundo?</h3>
+<p>Se você tiver curiosidade sobre como trabalharmos juntas, visite <a href="https://www.nicolebadotti.com">nicolebadotti.com</a> ou simplesmente responda a este e-mail.</p>
+
+<hr class="email-divider">
+
+<div class="email-signature">
+<p class="email-signature-phrase">Consciência é o primeiro passo.<br>Autorrespeito é o que transforma.</p>
+<p class="email-signature-name">Nicole Badotti</p>
+<p class="email-signature-title">Health and Wellness Coach</p>
+</div>
+
+</td>
+</tr>
+
+<tr>
+<td class="email-footer">
+<p>Londres, Reino Unido</p>
+<p>
+<a href="{{ unsubscribe_url }}" style="color:rgba(255,255,255,0.8);">Cancelar inscrição</a> |
+<a href="{{ subscriber_preferences_url }}" style="color:rgba(255,255,255,0.8);">Preferências</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>
