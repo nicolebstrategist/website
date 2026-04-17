@@ -1275,7 +1275,7 @@ EXIT-INTENT POPUP
 .exit-popup-heading {
     font-family: "Playfair Display", serif;
     color: var(--accent);
-    font-size: 22px;
+    font-size: 30px;
     margin: 8px 0 12px;
 }
 
