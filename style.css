@@ -331,6 +331,22 @@ HERO
 }
 
 /* =========================
+HERO BADGES
+========================= */
+.hero-badges {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin: 24px 0 14px 0;
+    justify-content: center;
+}
+
+.hero-badges img {
+    height: 120px;
+    width: auto;
+}
+
+/* =========================
 ABOUT
 ========================= */
 #about {
@@ -1868,6 +1884,16 @@ RESPONSIVE
 
     .hero-text h1 {
         font-size: 35px;
+    }
+
+    .hero-badges {
+    justify-content: center;
+    gap: 16px;
+    margin: 16px 0 10px 0;
+    }
+
+    .hero-badges img {
+        height: 110px;
     }
 
     .about-highlight {
