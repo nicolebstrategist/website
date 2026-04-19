@@ -1887,13 +1887,13 @@ RESPONSIVE
     }
 
     .hero-badges {
-    justify-content: center;
-    gap: 16px;
-    margin: 16px 0 10px 0;
+        justify-content: center;
+        gap: 16px;
+        margin: 16px 0 10px 0;
     }
 
     .hero-badges img {
-        height: 110px;
+        height: 100px;
     }
 
     .about-highlight {
