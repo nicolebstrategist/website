@@ -336,7 +336,7 @@ HERO BADGES
 .hero-badges {
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: 40px;
     margin: 24px 0 14px 0;
     justify-content: center;
 }
@@ -1888,7 +1888,7 @@ RESPONSIVE
 
     .hero-badges {
         justify-content: center;
-        gap: 16px;
+        gap: 10px;
         margin: 16px 0 10px 0;
     }
 
