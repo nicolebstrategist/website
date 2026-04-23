@@ -1362,6 +1362,7 @@ EXIT-INTENT POPUP
     color: var(--ink) !important;
     opacity: 0.45;
     margin-bottom: 0;
+    text-align: center;
 }
 
 .exit-popup-success {
