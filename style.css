@@ -1911,7 +1911,7 @@ RESPONSIVE
     .hero-badges {
         justify-content: center;
         gap: 10px;
-        margin: 16px 0 10px 0;
+        margin: 50px 0 10px 0;
     }
 
     .hero-badges img {
