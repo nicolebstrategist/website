@@ -302,7 +302,6 @@ HERO
 .hero-image {
     width: 100%;
     box-shadow: none;
-    transform: scaleX(-1);
 }
 
 .hero-text {
