@@ -1884,6 +1884,9 @@ RESPONSIVE
         letter-spacing: 0.3px;
     }
 
+        .mobile-break {
+        display: block;
+    }
 
     #hero {
         grid-template-columns: 1fr;
@@ -1893,11 +1896,13 @@ RESPONSIVE
     }
 
     .hero-text h1 {
-        font-size: 35px;
+        font-size: 32px;
         text-align: center;
+        line-height: 1.3;
     }
 
     .hero-text h3 {
+        font-size: 23px;
         text-align: center;
     }
 
@@ -1923,10 +1928,6 @@ RESPONSIVE
         padding: 0 28px;
     }
 
-    .mobile-break {
-        display: block;
-    }
-
     .about-inner {
         grid-template-columns: 1fr;
         gap: 38px;
@@ -1946,7 +1947,7 @@ RESPONSIVE
     }
 
     #services .service-box {
-        padding: 0 18px 20px;
+        padding: 0 15px 20px;
     }
 
     #services .service-box h3:first-child {
