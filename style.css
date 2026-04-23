@@ -327,6 +327,7 @@ HERO
 .hero-text h3{
     margin-bottom: 30px;
     line-height: 1.3;
+    font-size: 23px;
 }
 
 .hero-text p {
