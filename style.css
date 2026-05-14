@@ -70,7 +70,7 @@ h1 {
 h2 {
     font-family: "Playfair Display", Georgia, "Times New Roman", serif;
     font-weight: 600;
-    font-size: 40px;
+    font-size: 38px;
     letter-spacing: 0.2px;
     color: var(--accent);
 }
@@ -792,14 +792,14 @@ PROGRAMMES
 }
 
 #right-for-you {
-    min-height: 70vh;
+    min-height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 40px 28px;
     text-align: center;
-    background: #fff5ee;
+    background: #fffaf4;
     width: 100vw;
     max-width: none;
     margin-left: calc(50% - 50vw);
@@ -814,7 +814,7 @@ PROGRAMMES
 .call-inner {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 70px;
+    gap: 0px;
     align-items: center;
     max-width: var(--container);
     margin: 0 auto;
@@ -862,11 +862,11 @@ PROGRAMMES
 
 #call .contact-left {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 #call .contact-image {
-    width: 100%;
+    width: 80%;
     max-width: 560px;
 }
 
@@ -1134,6 +1134,47 @@ CONTACT FORM
 
 .send-form:hover{
     opacity: 0.92;
+}
+
+/* =========================
+RESPECT METHOD TESTIMONIALS
+========================= */
+#rm-testimonials {
+    background: #fffaf4;
+    width: 100vw;
+    max-width: none;
+    margin-left: calc(50% - 50vw);
+    padding: 0px 30px 28px;
+    text-align: center;
+}
+
+#rm-testimonials h2 {
+    max-width: var(--container);
+    margin: 0 auto 40px;
+}
+
+#rm-testimonials blockquote {
+    max-width: 780px;
+    margin: 0 auto 40px;
+}
+
+#rm-testimonials blockquote p {
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--ink);
+    text-align: center;
+    font-style: italic;
+}
+
+#rm-testimonials cite {
+    display: block;
+    margin-top: 12px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    color: var(--ink);
+    opacity: 0.7;
+    font-style: normal;
 }
 
 /* =========================
@@ -2058,12 +2099,29 @@ RESPONSIVE
         text-align: left;
     }
 
+    #the-foundation {
+        max-width: 100%;
+    }
+
+    #respect-method .container {
+        max-width: 100%;
+    }
+    
+    #the-growth {
+        max-width: 100%;
+    }
+
+    #projects .container {
+        max-width: 100%;
+    } 
+
     #contact {
         padding: 80px 0;
     }
 
     #contact h2 {
         font-size: 36px;
+        text-align: center;
     }
 
     #contact .contact-inner {
