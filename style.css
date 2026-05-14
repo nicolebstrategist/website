@@ -293,15 +293,16 @@ HERO
     display: grid;
     grid-template-columns: 0.9fr 1.1fr;
     justify-items: center;
-    gap: 100px;
+    gap: 50px;
     align-items: center;
     text-align: justify;
     min-height: 90vh;
 }
 
 .hero-image {
-    width: 100%;
+    width: 90%;
     box-shadow: none;
+    margin: 0 auto;
 }
 
 .hero-text {
@@ -317,7 +318,7 @@ HERO
 }
 
 .hero-text h1 {
-    font-size: 48px;
+    font-size: 38px;
     line-height: 1.05;
     margin-bottom: 20px;
     text-align: left;
@@ -641,6 +642,10 @@ PROGRAMMES
     text-align: justify;
 }
 
+#the-foundation{
+    max-width: 80%;
+}
+
 #the-foundation p{
     margin: 10px 0px;
 }
@@ -659,7 +664,7 @@ PROGRAMMES
 }
 
 #respect-method .container{
-    max-width: var(--container);
+    max-width: 80%;
     margin: 0 auto;
     padding: 0 28px;
 }
@@ -738,6 +743,24 @@ PROGRAMMES
 
 .highlight {
     font-weight: 400;
+}
+
+#the-growth {
+    max-width: 80%;
+} 
+
+#projects {
+    max-width: none;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    background: #fffaf4;
+    padding: 56px 0;
+}
+
+#projects .container {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 0 28px;
 }
 
 #the-growth p, #projects p{
