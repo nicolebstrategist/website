@@ -829,6 +829,10 @@ PROGRAMMES
     padding-left: 1.2em;
 }
 
+#foundation h2, #foundation p{
+    text-align: center;
+}
+
 #introduction h2,
 #journey h2,
 #call h2{
@@ -1946,7 +1950,7 @@ JOURNEY SECTION
 .journey-inner {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 60px;
+    gap: 0px;
     align-items: center;
     max-width: var(--container);
     margin: 0 auto;
