@@ -217,6 +217,36 @@ header {
     height: 22px;
 }
 
+.lang-switch {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+}
+
+.lang-switch a {
+    color: var(--accent);
+    opacity: 0.45;
+    text-decoration: none;
+}
+
+.lang-switch a:hover {
+    opacity: 1;
+}
+
+.lang-switch .lang-active {
+    color: var(--accent);
+}
+
+.lang-switch .lang-sep {
+    color: var(--accent);
+    opacity: 0.25;
+    font-weight: 400;
+}
+
 .burger-menu {
     display: none;
     font-size: 28px;
@@ -1882,30 +1912,9 @@ RESPONSIVE
     }
 
     .nav-flags {
-        display: -webkit-flex;
         display: flex;
-        -webkit-flex-direction: row;
-        flex-direction: row;
-        -webkit-align-items: center;
         align-items: center;
         grid-column: 3;
-    }
-
-    .nav-flags a {
-        display: -webkit-flex;
-        display: flex;
-        -webkit-align-items: center;
-        align-items: center;
-    }
-
-    .nav-flags a:first-child {
-        margin-right: 10px;
-    }
-
-    .nav-flags img {
-        width: 22px;
-        height: 22px;
-        display: block;
     }
 
     .navbar .social-links {
