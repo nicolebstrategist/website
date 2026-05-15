@@ -191,7 +191,7 @@ header {
 
 .menu {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     gap: 20px;
 }
 
@@ -217,12 +217,16 @@ header {
     height: 22px;
 }
 
+.navbar .social-links .lang-switch {
+    margin-left: 14px;
+}
+
 .lang-switch {
     display: flex;
     align-items: center;
     gap: 5px;
     font-family: "DM Sans", sans-serif;
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 600;
     letter-spacing: 0.06em;
 }
@@ -1908,7 +1912,7 @@ RESPONSIVE
     .navbar {
         grid-template-columns: auto 1fr auto auto;
         padding: 0 18px 12px;
-        gap: 14px;
+        gap: 10px;
     }
 
     .nav-flags {
