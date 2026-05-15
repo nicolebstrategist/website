@@ -20,7 +20,7 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="/Images/favicon.ico" type="image/x-icon">
 
-    <!-- Playfair Display Font -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
@@ -74,6 +74,7 @@
     </script>
 </head>
 
+<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9GS43Z8V3T"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
@@ -82,7 +83,7 @@
     gtag('config', 'G-9GS43Z8V3T');
 </script>
 
-<body>
+<body class="services">
     <header>
         <nav class="navbar">
             <div class="logo">
@@ -96,7 +97,7 @@
                 <a href="./index-br.html#about">Sobre</a>
                 <a href="./index-br.html#services">Serviços</a>
                 <a href="./index-br.html#testimonials">Depoimentos</a>
-                <a href="#contact">Contato</a>
+                <a href="./index-br.html#contact">Contato</a>
             </div>
 
             <div class="social-links">
@@ -116,7 +117,7 @@
             </div>
 
             <div class="nav-cta">
-                <a href="#contact" class="cta-button" target="_blank" rel="noopener noreferrer">
+                <a href="#contact" class="cta-button" rel="noopener noreferrer">
                     ENTRE EM CONTATO
                 </a>
             </div>
@@ -139,9 +140,9 @@
             <a href="./index-br.html#about" onclick="closeMenu()">Sobre</a>
             <a href="./index-br.html#services" onclick="closeMenu()">Serviços</a>
             <a href="./index-br.html#testimonials" onclick="closeMenu()">Depoimentos</a>
-            <a href="#contact" onclick="closeMenu()">Contato</a>
+            <a href="./index-br.html#contact" onclick="closeMenu()">Contato</a>
 
-            <a href="#contact"
+            <a href="/index-br.html#contact"
                 class="cta-button mobile-cta"
                 rel="noopener noreferrer"
                 onclick="closeMenu()">
@@ -152,25 +153,35 @@
                 <a href="https://www.instagram.com/nicole.badotti" target="_blank" rel="noopener">
                     <img src="/Images/instagram-icon.svg" alt="Instagram">
                 </a>
-
                 <a href="https://www.linkedin.com/in/nicolebadotti/" target="_blank" rel="noopener">
                     <img src="/Images/linkedin-icon.svg" alt="LinkedIn">
                 </a>
-
             </div>
         </div>
     </header>
 
+    <section class="services-hero">
+        <h1>Serviços</h1>
+        <p class="services-intro">Cada serviço é construído em torno da sua realidade, contexto, e necessidade.</p>
+        <nav class="services-toc" aria-label="Ir para programa">
+            <a href="#the-foundation">A Base</a>
+            <a href="#respect-method">O Método Respeito</a>
+            <a href="#the-growth">O Desenvolvimento</a>
+            <a href="#espaco-consciente">Espaço Consciente</a>
+            <a href="#projects">Projetos Sob Medida</a>
+        </nav>
+    </section>
+
     <!-- Programme Sections -->
     <section id="the-foundation">
         <h2>A Base</h2>
-        <h4 class="subtitle">Uma introdução de 4 semanas à abordagem do Método Respeito.</h4>
-        <p>A mudança só é possível quando você sabe de onde realmente está partindo.</p>
-        <p>A Base é um programa de coaching individual desenvolvido para quem quer um diagnóstico claro e honesto da sua realidade atual antes de se comprometer com uma jornada mais longa. Identificamos o que tem moldado seus padrões e o que precisa mudar, para que você possa avançar com intenção.</p>
+        <h4 class="subtitle">Uma introdução de 4 semanas ao Método Respeito.</h4>
+        <p>Antes de mudar qualquer hábito, decisão ou rotina, é preciso entender o que realmente sustenta a forma como você vive hoje.</p>
+        <p>Este programa foi criado para oferecer um olhar claro e estratégico sobre sua realidade atual: padrões, sobrecargas, hábitos, ambiente, relações e comportamentos que mantêm você presa no automático.</p>
         <h4>O Processo</h4>
-        <p>Começamos com a sua realidade atual: saúde, hábitos e contexto. Identificamos os gatilhos específicos que te mantêm presa e traçamos uma abordagem diferente, adaptada à sua vida.</p>
+        <p>Analisamos sua rotina, contexto, hábitos, relações e forma de funcionar no dia a dia para identificar o que está drenando sua energia e impedindo mudanças consistentes.</p>
         <h4>O Resultado</h4>
-        <p>Um resumo personalizado da sua situação, seus principais padrões e gatilhos, e um conjunto inicial de direções claras para desenvolver, seja de forma independente ou por meio do Método Respeito.</p>
+        <p>Mais clareza sobre o que precisa mudar, o que precisa ser sustentado e quais ajustes têm maior impacto na sua vida neste momento.</p>
 
         <h4>O que está incluído</h4>
             <ul class="included">
@@ -179,50 +190,51 @@
                 <li>Resumos escritos após cada conversa</li>
                 <li>Acesso a recursos digitais</li>
                 <li>Suporte via WhatsApp/e-mail de segunda a sexta</li>
-                <li>Um resumo escrito personalizado ao final</li>
+                <li>Resumo escrito personalizado ao final</li>
             </ul>
             <h4>Investimento:</h4>
-            <p>R$ 1,195</p>
+            <p>R$ 1.195</p>
     </section>
 
     <section id="respect-method">
-        <div class="container">
+        <div class="respect-method-wrap">
             <h2>O Método Respeito</h2>
-            <h4 class="subtitle">Uma mentoria privada de 12 semanas baseada nas duas coisas que a maioria dos programas de bem-estar ignora.</h4>
-            <p>A maioria das abordagens falha porque ignora a vida que você realmente vive. Elas te entregam um modelo e assumem que a relação que você tem consigo mesma está bem. O Método Respeito é diferente. Ele constrói o programa em torno de você, com foco em:</p>
-            <ul class="intro">
-                <li><b>A base interna:</b> Como você fala consigo mesma e toma decisões quando ninguém está olhando ou quando se sente sob pressão.</li>
-                <li><b>O contexto real:</b> Os fatores culturais, profissionais e relacionais específicos que moldam os seus dias.</li>
-            </ul>
-            <p>Não é uma questão de falta de disciplina; é uma questão de falta de alinhamento. Não encaixamos você em um programa; construímos as condições que tornam a mudança duradoura <i>inevitável</i>.</p>
+            <h4 class="subtitle">Mentoria privada de 12 semanas para reorganizar sua vida de maneira mais consciente, alinhada com quem você realmente é e com o que de fato importa para você.</h4>
+            <div class="respect-method-inner">
+                <div class="respect-method-text">
+                    <p>A maioria das abordagens tenta mudar comportamento sem considerar o contexto, os padrões emocionais, o ambiente ou a relação que você tem consigo mesma. O Método Respeito integra todos esses aspectos.</p>
+                    <p>Trabalhamos corpo, mente, emoções, ambiente, hábitos, relações e tomada de decisão para criar mudanças que façam sentido na sua vida real, não apenas na teoria.</p>
+                    <p>Não se trata de buscar perfeição, produtividade extrema ou controle. Trata-se de desenvolver autorrespeito suficiente para construir uma vida que não exija que você se abandone para funcionar.</p>
 
-            <h4>O que está incluído:</h4>
-                <ul class="included">
-                    <li>12 sessões semanais de 60 minutos</li>
-                    <li>Questionário pré-programa</li>
-                    <li>Resumos escritos após cada conversa</li>
-                    <li>Acesso a recursos digitais</li>
-                    <li>Suporte via WhatsApp/e-mail de segunda a sexta</li>
-                    <li>Uma estratégia de bem-estar personalizada em torno da sua vida, não de um modelo pronto</li>
-                </ul>
+                    <h4>O que está incluído:</h4>
+                    <ul class="included">
+                        <li>12 sessões semanais de 60 minutos</li>
+                        <li>Questionário pré-programa</li>
+                        <li>Resumos escritos após cada conversa</li>
+                        <li>Acesso a recursos digitais</li>
+                        <li>Suporte via WhatsApp/e-mail de segunda a sexta</li>
+                        <li>Estratégia personalizada construída em torno da sua realidade</li>
+                    </ul>
 
-            <p>Cada sessão começa com uma revisão da sua semana: o que você se comprometeu a fazer e o que realmente fez. A estrutura foi criada para te manter em movimento entre as sessões, não apenas durante elas, e para construir a autonomia de continuar assim muito depois do programa terminar.</p>
-            <h4>Investimento:</h4>
-            <p>R$ 3,395 | Planos de pagamento disponíveis</p>
-
-            <div class="respect-method-cta">
-            <a href="/respect-method-br.html" class="cta-button">Saiba mais</a>
+                    <p>Cada sessão parte da sua semana real: decisões, desafios, padrões e comportamentos. O objetivo não é gerar dependência do processo, mas desenvolver autonomia para sustentar mudanças de forma consistente.</p>
+                    <h4>Investimento:</h4>
+                    <p>R$ 3.395 | Planos de pagamento disponíveis</p>
+                </div>
+                <div class="respect-method-image">
+                    <img src="/Images/nicolebadotti-rm.webp" alt="Nicole Badotti" loading="lazy">
+                </div>
+                <div class="respect-method-cta">
+                    <a href="/respect-method-br.html" class="cta-button">Saiba mais</a>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="the-growth">
         <h2>O Desenvolvimento</h2>
-        <h4 class="subtitle">Suporte contínuo para pessoas que já construíram uma base sólida e estão prontas para continuar avançando.</h4>
-        <p>A mudança não para quando o programa termina. O trabalho também não.</p>
-        <p>Pesquisas mostram consistentemente que a mudança de estilo de vida duradoura é não linear e exige suporte contínuo, especialmente quando novos desafios surgem. Manutenção não é sinal de que o trabalho não foi feito corretamente. É sinal de que você entende como a mudança realmente funciona.</p>
-        <p>O Desenvolvimento é um programa de mentoria contínuo e flexível criado para pessoas que já construíram uma base sólida, seja por meio do Método Respeito ou de outro processo sério de desenvolvimento pessoal, e querem suporte contínuo para sustentá-la, aprofundá-la e continuar crescendo.</p>
-        <p>Duas sessões por mês oferecem estrutura suficiente para manter a responsabilidade e espaço suficiente para integrar o que está mudando na sua vida. Não se trata de recomeçar. Trata-se de não ficar parada.</p>
+        <h4 class="subtitle">Suporte contínuo para quem deseja sustentar e aprofundar as mudanças construídas ao longo do processo.</h4>
+        <p>Mudança duradoura não acontece de forma linear. Novos desafios, fases e contextos exigem ajustes constantes.</p>
+        <p>O Desenvolvimento oferece acompanhamento contínuo para manter clareza, responsabilidade e direção sem precisar recomeçar do zero toda vez que a vida muda.</p>
 
         <h4>O que está incluído</h4>
             <ul class="included">
@@ -231,24 +243,45 @@
                 <li>Acesso a recursos digitais</li>
                 <li>Suporte via WhatsApp/e-mail de segunda a sexta</li>
             </ul>
-        
-        <p><i>A duração é flexível e definida em conjunto com base em onde você está e no que você precisa.</i></p>
+
+        <p><i>A duração é flexível e definida de acordo com suas necessidades.</i></p>
         <h4>Investimento:</h4>
-        <p>R$ 595 por mês</p>
+        <p>R$ 575 por mês</p>
     </section>
 
-    <div class="about-highlight">
-            <p class="phrase">Em qualquer fase em que você estiver, o ponto de partida é sempre o mesmo: conhecer a si mesma <i>o suficiente</i> para construir uma vida que <b>realmente seja sua</b>.</p>
-            <img src="Images/bee-icon.svg" alt="Bee icon" class="bee-icon">
-    </div>
+    <section id="espaco-consciente">
+        <div class="espaco-inner">
+            <div class="espaco-image">
+                <img src="/Images/nicolebadotti-ec.webp" alt="Nicole Badotti" class="hero-image">
+            </div>
+
+            <div class="espaco-text">
+                <h1>Espaço Consciente</h1>
+                <p>Serviço estratégico de organização e otimização de ambientes para criar espaços que apoiem sua rotina, reduzam sobrecarga e tragam mais clareza, funcionalidade e bem-estar ao seu dia a dia.</p>
+                <p>Os ambientes em que vivemos influenciam diretamente nossa energia, foco, hábitos e tomada de decisão. Um espaço desorganizado ou desalinhado com a sua realidade não afeta apenas a estética. Ele gera desgaste mental, ruído visual e fricção constante na rotina.</p>
+
+                <h4>O Processo</h4>
+                <p>Cada projeto começa com uma análise do ambiente, da sua rotina e das suas necessidades. A partir disso, o trabalho se desenvolve em torno de três pilares:</p>
+                <ul class="included">
+                    <li><b>Adequação ao contexto:</b> Criamos um espaço alinhado à sua rotina, preferências, objetivos e forma de viver.</li>
+                    <li><b>Redução de toxinas:</b> Identificamos excessos, estímulos e elementos que drenam energia, aumentam o estresse ou dificultam o funcionamento do ambiente.</li>
+                    <li><b>Organização estratégica:</b> Desenvolvemos sistemas funcionais, personalizados e sustentáveis para facilitar o dia a dia sem depender de manutenção excessiva.</li>
+                </ul>
+                <p>Não se trata apenas de organização ou estética. Trata-se de construir um ambiente que trabalhe a seu favor, em vez de gerar mais desgaste.</p>
+
+                <h4>Investimento:</h4>
+                <p>O investimento varia de acordo com o projeto. Tudo começa com uma consulta inicial gratuita.</p>
+            </div>
+        </div>
+    </section>
 
     <section id="projects">
-        <h2>Projetos Sob Medida</h2>
-        <h4 class="subtitle">Trabalhando Juntos Além do 1:1</h4>
-        <p><b>Meu trabalho não se limita à mentoria individual.</b></p>
-        <p>Se você representa uma organização, uma marca ou um projeto criativo que deseja trazer o autorrespeito e o bem-estar para a sua cultura, adoraria explorar o que poderíamos construir juntos.</p>
-        <p>As colaborações podem ter muitas formas: workshops, eventos, suporte a colaboradores, palestras e recursos digitais, entre outros. Mas os melhores projetos tendem a começar com uma conversa, não com um briefing.</p>
-        <p>Se você tem algo em mente, entre em contato. Adoraria ouvir suas ideias.</p>
+        <div class="container">
+            <h2>Projetos Sob Medida</h2>
+            <h4 class="subtitle">Trabalhando Juntas Além do 1:1</h4>
+            <p>O autorrespeito e o bem-estar deveriam ser o padrão dentro das culturas e empresas, não apenas nos indivíduos. Colaboro com organizações, marcas e projetos criativos para integrar esses valores à sua cultura por meio de workshops, palestras e consultoria.</p>
+            <p>Os melhores projetos começam com uma conversa, não com um briefing. Se você tiver uma ideia, entre em contato.</p>
+        </div>
     </section>
 
     <section id="contact">
@@ -258,8 +291,8 @@
 
                 <div class="contact-form">
                     <p>É exatamente para isso que serve a primeira conversa.</p>
-                    <p>Agende uma chamada gratuita e vamos descobrir juntas o que faz mais sentido para você.</p>
-                    
+                    <p>Agende uma chamada gratuita para entendermos o que faz mais sentido para você neste momento.</p>
+
                     <a href="https://calendly.com/nicole-badotti/consulta-inicial" class="cta-button">AGENDE UMA CHAMADA</a>
                 </div>
 
@@ -267,7 +300,7 @@
             </div>
 
             <div class="contact-right">
-                <img src="/Images/nicolebadotti-portrait2.webp" alt="Portrait Picture" class="contact-image2" loading="lazy">
+                <img src="/Images/nicolebadotti-portrait.webp" alt="Foto de Nicole Badotti" class="contact-image2" loading="lazy">
             </div>
         </div>
     </section>
@@ -275,20 +308,15 @@
     <!-- Banner Newsletter -->
     <section class="nb-newsletter" aria-label="Inscrição na newsletter">
         <div class="nb-inner">
-
             <div class="nb-text">
                 <p class="nb-label">Newsletter</p>
-                <h2 class="nb-heading">Reflexões guiadas e ferramentas práticas para ajudar você a desenvolver clareza, confiança e autorrespeito.</h2>
+                <h2 class="nb-heading">Reflexões e ferramentas práticas para viver com mais consciência, clareza e autorrespeito.</h2>
             </div>
 
             <div class="nb-divider"></div>
 
             <div class="nb-form">
-                <form
-                    action="https://app.kit.com/forms/9338396/subscriptions"
-                    method="post"
-                    id="nb-kit-form"
-                >
+                <form action="https://app.kit.com/forms/9338396/subscriptions" method="post" id="nb-kit-form">
                     <input type="text" name="fields[first_name]" placeholder="Nome" autocomplete="given-name">
                     <input type="email" name="email_address" placeholder="E-mail" required autocomplete="email">
                     <button type="submit">Inscrever-se</button>
@@ -296,7 +324,6 @@
                 <p class="nb-privacy">Sem spam. Cancele quando quiser.</p>
                 <p class="nb-success" id="nb-success">Sucesso! Verifique seu e-mail para confirmar sua inscrição.</p>
             </div>
-
         </div>
     </section>
 
@@ -316,7 +343,7 @@
                     <li><a href="./index-br.html">Início</a></li>
                     <li><a href="./index-br.html#about">Sobre</a></li>
                     <li><a href="./index-br.html#services">Serviços</a></li>
-                    <li><a href="#contact">Contato</a></li>
+                    <li><a href="./index-br.html#contact">Contato</a></li>
                 </ul>
                 <ul class="footer-legal">
                     <li><a href="./conditions-br.html#terms-of-use">Termos de Uso</a></li>
@@ -331,6 +358,22 @@
         </div>
     </footer>
 
+    <!-- Cookie Popup -->
+    <script>
+        const savedConsent = localStorage.getItem("consentMode");
+        if (savedConsent) {
+            gtag("consent", "default", JSON.parse(savedConsent));
+        } else {
+            gtag("consent", "default", {
+                ad_storage: "denied",
+                analytics_storage: "denied",
+                personalization_storage: "denied",
+                functionality_storage: "denied",
+                security_storage: "granted"
+            });
+        }
+    </script>
+
     <div id="cookie-banner" class="cookie-banner">
         <p>Para garantir a melhor experiência possível, este site utiliza cookies essenciais e, com a sua permissão, cookies analíticos e outros cookies não essenciais. Você pode aceitar, recusar ou customizar as suas preferências a qualquer momento.
             <a id="learn-more" href="/conditions-br.html" target="_blank">Saiba mais</a>
@@ -342,7 +385,7 @@
         </div>
     </div>
 
-    <div id="preference-modal">
+    <div id="preference-modal" style="display: none;">
         <h2>Preferências de Privacidade</h2>
         <ul>
             <li>
@@ -369,29 +412,13 @@
         </div>
     </div>
 
-    <script>
-        const savedConsent = localStorage.getItem("consentMode");
-
-        if (savedConsent) {
-            gtag("consent", "default", JSON.parse(savedConsent));
-        } else {
-            gtag("consent", "default", {
-                ad_storage: "denied",
-                analytics_storage: "denied",
-                personalization_storage: "denied",
-                functionality_storage: "denied",
-                security_storage: "granted"
-            });
-        }
-    </script>
-
     <!-- Newsletter popup -->
     <div id="exit-popup" class="exit-popup" role="dialog" aria-modal="true" aria-label="Inscrição na newsletter">
         <div class="exit-popup-card">
             <button class="exit-popup-close" aria-label="Fechar">&times;</button>
             <p class="nb-label">Newsletter</p>
             <h2 class="exit-popup-heading">Você se trata com o respeito que merece?</h2>
-            <p class="exit-popup-desc">Inscreva-se e receba o Mapa do Autorrespeito, uma ferramenta para ajudar você a identificar onde o autorrespeito está presente, ou não, na sua vida.</p>
+            <p class="exit-popup-desc">Inscreva-se para receber o Mapa do Autorrespeito, uma ferramenta prática para identificar onde o autorrespeito está presente na sua vida e onde você pode estar se abandonando sem perceber.</p>
             <form action="https://app.kit.com/forms/9322503/subscriptions" method="post" id="exit-popup-form">
                 <input type="text" name="fields[first_name]" placeholder="Nome" autocomplete="given-name">
                 <input type="email" name="email_address" placeholder="Endereço de e-mail" required autocomplete="email">
