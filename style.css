@@ -1947,7 +1947,7 @@ JOURNEY SECTION
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
-    align-items: start;
+    align-items: center;
     max-width: var(--container);
     margin: 0 auto;
 }
