@@ -846,6 +846,12 @@ PROGRAMMES
     text-align: left;
 }
 
+.right-inner {
+    max-width: 680px;
+    width: 100%;
+    text-align: center;
+}
+
 #right-for-you {
     min-height: 60vh;
     display: flex;
@@ -1949,7 +1955,7 @@ JOURNEY SECTION
 
 .journey-inner {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 0.9fr 1.1fr;
     gap: 0px;
     align-items: center;
     max-width: var(--container);
