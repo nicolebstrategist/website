@@ -247,6 +247,53 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // ======================
+    // FADE-IN ON SCROLL
+    // ======================
+    if (window.IntersectionObserver && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+
+        const singleSelectors = [
+            '.hero-text',
+            '.hero-image',
+            '.hero-badges',
+            '.about-highlight',
+            '#contact .contact-inner',
+            '#the-foundation',
+            '#respect-method',
+            '#the-growth',
+            '#projects .container',
+            '.legal-hero',
+            '.services-hero',
+        ];
+
+        singleSelectors.forEach(sel => {
+            document.querySelectorAll(sel).forEach(el => el.classList.add('fade-in'));
+        });
+
+        const staggeredSelectors = [
+            { sel: '#services .service-box', delay: 0.12 },
+            { sel: '.legal-section', delay: 0.07 },
+        ];
+
+        staggeredSelectors.forEach(({ sel, delay }) => {
+            document.querySelectorAll(sel).forEach((el, i) => {
+                el.classList.add('fade-in');
+                el.style.transitionDelay = `${i * delay}s`;
+            });
+        });
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.08 });
+
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    }
+
+    // ======================
     // EXIT-INTENT POPUP
     // ======================
     const exitPopup = document.getElementById("exit-popup");
