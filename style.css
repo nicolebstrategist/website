@@ -1618,6 +1618,29 @@ FOOTER
     font-family: "DM Sans", sans-serif;
 }
 
+html[lang="pt-BR"] .nb-newsletter {
+    display: none;
+}
+
+html[lang="pt-BR"] .footer-inner {
+    overflow: hidden;
+}
+
+html[lang="pt-BR"] .footer-legal {
+    position: relative;
+    padding-top: 10px;
+}
+
+html[lang="pt-BR"] .footer-legal::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -9999px;
+    right: 0;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
 html[lang="fr"] .footer-inner {
     overflow: hidden;
 }
@@ -1955,7 +1978,22 @@ body.services #the-foundation,
 body.services #respect-method,
 body.services #the-growth,
 body.services #projects {
-    border-top: 1px solid rgba(243, 106, 46, 0.2);
+    position: relative;
+}
+
+body.services #the-foundation::before,
+body.services #respect-method::before,
+body.services #the-growth::before,
+body.services #projects::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    max-width: var(--container);
+    height: 1px;
+    background: rgba(243, 106, 46, 0.2);
 }
 
 body.services .services-hero {

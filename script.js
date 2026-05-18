@@ -263,6 +263,14 @@ document.addEventListener("DOMContentLoaded", () => {
             '#projects .container',
             '.legal-hero',
             '.services-hero',
+            '#respect-method-page .container',
+            '#introduction',
+            '#foundation',
+            '#journey',
+            '#right-for-you',
+            '#rm-testimonials',
+            '#call',
+            '#espaco-consciente',
         ];
 
         singleSelectors.forEach(sel => {
