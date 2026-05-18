@@ -704,7 +704,7 @@ PROGRAMMES
     width: 100vw;
     margin-left: calc(50% - 50vw);
     background: #fffaf4;
-    padding: 56px 0;
+    padding: 20px 0;
 }
 
 .respect-method-wrap {
@@ -811,7 +811,7 @@ PROGRAMMES
     width: 100vw;
     margin-left: calc(50% - 50vw);
     background: #fffaf4;
-    padding: 56px 0;
+    padding: 20px 0;
 }
 
 #projects .container {
