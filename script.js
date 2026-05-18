@@ -302,6 +302,32 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // ======================
+    // NEWSLETTER BANNER FORM
+    // ======================
+    const nbKitForm = document.getElementById("nb-kit-form");
+
+    if (nbKitForm && document.documentElement.lang === "en") {
+        nbKitForm.addEventListener("submit", async (e) => {
+            e.preventDefault();
+            const email = nbKitForm.querySelector('input[type="email"]').value;
+            try {
+                await fetch("https://nicolebadotti.substack.com/api/v1/free", {
+                    method: "POST",
+                    mode: "no-cors",
+                    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                    body: "email=" + encodeURIComponent(email),
+                });
+            } catch (_) {}
+            window.open("https://canva.link/bpo2jk92z1zmq7q", "_blank", "noopener,noreferrer");
+            nbKitForm.style.display = "none";
+            const privacyNote = nbKitForm.closest(".nb-form").querySelector(".nb-privacy");
+            if (privacyNote) privacyNote.style.display = "none";
+            const nbSuccess = document.getElementById("nb-success");
+            if (nbSuccess) nbSuccess.style.display = "block";
+        });
+    }
+
+    // ======================
     // EXIT-INTENT POPUP
     // ======================
     const exitPopup = document.getElementById("exit-popup");
@@ -337,11 +363,24 @@ document.addEventListener("DOMContentLoaded", () => {
             exitPopupForm.addEventListener("submit", async (e) => {
                 e.preventDefault();
                 try {
-                    await fetch(exitPopupForm.action, {
-                        method: "POST",
-                        body: new FormData(exitPopupForm),
-                    });
+                    if (document.documentElement.lang === "en") {
+                        const email = exitPopupForm.querySelector('input[type="email"]').value;
+                        await fetch("https://nicolebadotti.substack.com/api/v1/free", {
+                            method: "POST",
+                            mode: "no-cors",
+                            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                            body: "email=" + encodeURIComponent(email),
+                        });
+                    } else {
+                        await fetch(exitPopupForm.action, {
+                            method: "POST",
+                            body: new FormData(exitPopupForm),
+                        });
+                    }
                 } catch (_) {}
+                if (document.documentElement.lang === "en") {
+                    window.open("https://canva.link/bpo2jk92z1zmq7q", "_blank", "noopener,noreferrer");
+                }
                 exitPopupForm.style.display = "none";
                 const privacyNote = exitPopup.querySelector(".exit-popup-privacy");
                 if (privacyNote) privacyNote.style.display = "none";

@@ -1547,6 +1547,11 @@ SUBSCRIBE SUCCESS
     margin-top: 12px;
 }
 
+.exit-popup-success p{
+    text-align: center;
+} 
+
+
 /* =========================
 FOOTER
 ========================= */
