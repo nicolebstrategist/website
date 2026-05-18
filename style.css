@@ -1608,9 +1608,23 @@ FOOTER
     font-family: "DM Sans", sans-serif;
 }
 
+html[lang="fr"] .footer-inner {
+    overflow: hidden;
+}
+
 html[lang="fr"] .footer-legal {
+    position: relative;
     padding-top: 10px;
-    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+html[lang="fr"] .footer-legal::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -9999px;
+    right: 0;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.3);
 }
 
 .footer-legal a {
