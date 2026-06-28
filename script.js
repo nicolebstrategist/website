@@ -270,7 +270,6 @@ document.addEventListener("DOMContentLoaded", () => {
             '#right-for-you',
             '#rm-testimonials',
             '#call',
-            '#espaco-consciente',
         ];
 
         singleSelectors.forEach(sel => {
@@ -306,7 +305,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // ======================
     const nbKitForm = document.getElementById("nb-kit-form");
 
-    if (nbKitForm && document.documentElement.lang === "en") {
+    if (nbKitForm) {
         nbKitForm.addEventListener("submit", async (e) => {
             e.preventDefault();
             const email = nbKitForm.querySelector('input[type="email"]').value;
@@ -363,24 +362,15 @@ document.addEventListener("DOMContentLoaded", () => {
             exitPopupForm.addEventListener("submit", async (e) => {
                 e.preventDefault();
                 try {
-                    if (document.documentElement.lang === "en") {
-                        const email = exitPopupForm.querySelector('input[type="email"]').value;
-                        await fetch("https://nicolebadotti.substack.com/api/v1/free", {
-                            method: "POST",
-                            mode: "no-cors",
-                            headers: { "Content-Type": "application/x-www-form-urlencoded" },
-                            body: "email=" + encodeURIComponent(email),
-                        });
-                    } else {
-                        await fetch(exitPopupForm.action, {
-                            method: "POST",
-                            body: new FormData(exitPopupForm),
-                        });
-                    }
+                    const email = exitPopupForm.querySelector('input[type="email"]').value;
+                    await fetch("https://nicolebadotti.substack.com/api/v1/free", {
+                        method: "POST",
+                        mode: "no-cors",
+                        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                        body: "email=" + encodeURIComponent(email),
+                    });
                 } catch (_) {}
-                if (document.documentElement.lang === "en") {
-                    window.open("https://canva.link/bpo2jk92z1zmq7q", "_blank", "noopener,noreferrer");
-                }
+                window.open("https://canva.link/bpo2jk92z1zmq7q", "_blank", "noopener,noreferrer");
                 exitPopupForm.style.display = "none";
                 const privacyNote = exitPopup.querySelector(".exit-popup-privacy");
                 if (privacyNote) privacyNote.style.display = "none";
