@@ -476,11 +476,10 @@ SERVICES
     box-shadow: 0 16px 36px rgba(243, 106, 46, 0.12);
 }
 
-#services .service-box .cta-button{
+#services .service-box .cta-button {
     background: transparent;
     color: #f36a2e;
     align-self: center;
-    margin-top: 8px;
     padding: 12px 18px;
     border: none;
     border-radius: 999px;
@@ -488,7 +487,7 @@ SERVICES
     border: 1.5px solid var(--accent);
 }
 
-#services h2{
+#services h2 {
     margin-top: 20px;
 }
 
@@ -505,9 +504,19 @@ SERVICES
 
 #services .service-box p {
     text-align: center;
-    margin: 0 auto;
+    margin: 0 auto 14px;
     max-width: 485px;
     line-height: 1.6;
+}
+
+#services .service-box ul {
+    list-style: none;
+    margin: 0 auto 14px;
+    text-align: center;
+}
+
+#services .service-box li {
+    margin-bottom: 6px;
 }
 
 #services .transformation {
