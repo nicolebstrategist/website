@@ -392,14 +392,21 @@ ABOUT
     max-width: var(--container);
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 70px;
+    grid-template-columns: 1.3fr 0.7fr;
+    gap: 40px;
     align-items: center;
 }
 
 .about-content p {
     margin-top: 14px;
-    max-width: 720px;
+}
+
+.about-photo {
+    width: 100%;
+    max-width: 450px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
 }
 
 .about-box h3 {
