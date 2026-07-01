@@ -926,9 +926,13 @@ PROGRAMMES
     width: fit-content;
 }
 
-#call .cta-button{
-    margin: 30px 0px;
-    font-size: 17px;
+#call .cta-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    padding: 14px 26px;
+    margin-top: 40px;
 }
 
 #call h2{
@@ -1314,13 +1318,13 @@ NEWSLETTER BANNER
 
 .nb-divider {
     width: 1px;
-    height: 70px;
+    height: 35px;
     background: rgba(255,255,255,0.2);
     flex-shrink: 0;
 }
 
 .nb-form {
-    flex: 0 0 240px;
+    flex: 1;
 }
 
 .nb-form form {
@@ -1644,7 +1648,7 @@ FOOTER
     grid-area: right;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
     align-items: flex-end;
 }
 
@@ -1680,7 +1684,6 @@ FOOTER
     grid-area: copy;
     font-size: 16px;
     opacity: 0.95;
-    margin-top: 10px;
     color: white;
 }
 
@@ -2465,6 +2468,7 @@ RESPONSIVE
 
     .nb-heading {
         font-size: 20px;
+        text-align: center;
     }
 
     .nb-newsletter {
@@ -2473,7 +2477,11 @@ RESPONSIVE
 
     .nb-inner {
         flex-direction: column;
-        gap: 1.5rem;
+        gap: 1rem;
+    }
+
+    .nb-divider {
+        display: none;
     }
 
     .nb-divider {
