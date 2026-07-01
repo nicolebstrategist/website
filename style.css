@@ -294,12 +294,12 @@ HERO
     justify-items: center;
     gap: 50px;
     align-items: center;
-    text-align: justify;
-    min-height: 90vh;
+    text-align: left;
+    min-height: 85vh;
 }
 
 .hero-image {
-    width: 90%;
+    width: 80%;
     box-shadow: none;
     margin: 0 auto;
 }
@@ -331,6 +331,7 @@ HERO
 
 .hero-text p {
     margin-bottom: 14px;
+    text-align: left;
 }
 
 .hero-text a:hover{
@@ -399,10 +400,11 @@ ABOUT
 
 .about-content p {
     margin-top: 14px;
+    text-align: left;
 }
 
 .about-photo {
-    width: 100%;
+    width: 90%;
     max-width: 450px;
     object-fit: cover;
     display: block;
@@ -449,7 +451,7 @@ SERVICES
 .services-inner {
     align-items: start;
     max-width: var(--container);
-    margin: 0 auto;
+    margin: 45px auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
@@ -487,10 +489,6 @@ SERVICES
     border: 1.5px solid var(--accent);
 }
 
-#services h2 {
-    margin-top: 20px;
-}
-
 #services .service-box h3 {
     font-size: 24px;
     font-weight: 600;
@@ -523,7 +521,6 @@ SERVICES
     background: #fbf3e6;
     width: 100vw;
     margin-left: calc(50% - 50vw);
-    margin-top: 50px;
     padding: 56px 0;
     text-align: center;
 }
@@ -1399,7 +1396,7 @@ SELF-RESPECT MAP SECTION
 }
 
 #self-respect-map p {
-    max-width: 680px;
+    max-width: 800px;
     text-align: center;
 }
 
