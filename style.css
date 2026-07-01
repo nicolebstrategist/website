@@ -1978,44 +1978,45 @@ body.legal .legal-section a:hover {
 SERVICES HERO
 ========================= */
 body.services {
-    background: #fffaf4;
+    background: #fbf3e6;
 }
 
 body.services #contact {
     background: #fbf3e6;
 }
 
-body.services #the-foundation,
-body.services #respect-method,
-body.services #the-growth,
-body.services #projects {
-    position: relative;
+
+body.services #the-foundation {
+    background: #fbf3e6;
+    width: 100vw;
+    max-width: none;
+    margin-left: calc(50% - 50vw);
+    margin-right: 0;
+    padding: 20px 0;
 }
 
-body.services #the-foundation::before,
-body.services #respect-method::before,
-body.services #the-growth::before,
-body.services #projects::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100vw;
-    max-width: var(--container);
-    height: 1px;
-    background: rgba(243, 106, 46, 0.2);
+body.services #the-foundation > * {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 28px;
+    padding-right: 28px;
 }
 
 body.services .services-hero {
-    padding: 0 10px 36px;
+    padding: 40px 10px 36px;
+    background: #fbf3e6;
+    width: 100vw;
+    max-width: none;
+    margin-left: calc(50% - 50vw);
+    margin-right: 0;
 }
 
 body.services .services-hero h1 {
     font-size: 50px;
     line-height: 1.02;
     text-align: center;
-    margin: 60px 0 18px;
+    margin: 20px;
 }
 
 body.services .services-intro {
