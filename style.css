@@ -1370,7 +1370,45 @@ NEWSLETTER BANNER
 }
 
 /* =========================
-EXIT-INTENT POPUP
+SELF-RESPECT MAP SECTION
+========================= */
+#self-respect-map {
+    width: 100vw;
+    max-width: none;
+    margin-left: calc(50% - 50vw);
+    padding: 0;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.srm-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    padding: 60px 28px;
+    text-align: center;
+    background: #fbf3e6;
+}
+
+#self-respect-map h2 {
+    margin-bottom: 4px;
+}
+
+#self-respect-map p {
+    max-width: 680px;
+    text-align: center;
+}
+
+#self-respect-map .cta-button {
+    margin-top: 10px;
+}
+
+/* =========================
+EXIT-INTENT POPUP (removed)
 ========================= */
 .exit-popup {
     position: fixed;

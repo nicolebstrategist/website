@@ -263,6 +263,7 @@ document.addEventListener("DOMContentLoaded", () => {
             '#projects .container',
             '.legal-hero',
             '.services-hero',
+            '#self-respect-map',
             '#respect-method-page .container',
             '#introduction',
             '#foundation',
@@ -324,59 +325,6 @@ document.addEventListener("DOMContentLoaded", () => {
             const nbSuccess = document.getElementById("nb-success");
             if (nbSuccess) nbSuccess.style.display = "block";
         });
-    }
-
-    // ======================
-    // EXIT-INTENT POPUP
-    // ======================
-    const exitPopup = document.getElementById("exit-popup");
-
-    if (exitPopup) {
-        const exitPopupClose = exitPopup.querySelector(".exit-popup-close");
-        const exitPopupForm = document.getElementById("exit-popup-form");
-        const exitPopupSuccess = document.getElementById("exit-popup-success");
-        function openExitPopup() {
-            exitPopup.classList.add("active");
-            sessionStorage.setItem("exitPopupShown", "true");
-        }
-
-        function closeExitPopup() {
-            exitPopup.classList.remove("active");
-        }
-
-        if (!sessionStorage.getItem("exitPopupShown")) {
-            setTimeout(openExitPopup, 8000);
-        }
-
-        exitPopupClose.addEventListener("click", closeExitPopup);
-
-        exitPopup.addEventListener("click", (e) => {
-            if (e.target === exitPopup) closeExitPopup();
-        });
-
-        document.addEventListener("keydown", (e) => {
-            if (e.key === "Escape") closeExitPopup();
-        });
-
-        if (exitPopupForm) {
-            exitPopupForm.addEventListener("submit", async (e) => {
-                e.preventDefault();
-                try {
-                    const email = exitPopupForm.querySelector('input[type="email"]').value;
-                    await fetch("https://nicolebadotti.substack.com/api/v1/free", {
-                        method: "POST",
-                        mode: "no-cors",
-                        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-                        body: "email=" + encodeURIComponent(email),
-                    });
-                } catch (_) {}
-                window.open("https://canva.link/bpo2jk92z1zmq7q", "_blank", "noopener,noreferrer");
-                exitPopupForm.style.display = "none";
-                const privacyNote = exitPopup.querySelector(".exit-popup-privacy");
-                if (privacyNote) privacyNote.style.display = "none";
-                if (exitPopupSuccess) exitPopupSuccess.style.display = "block";
-            });
-        }
     }
 
 });
