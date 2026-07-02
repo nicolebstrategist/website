@@ -1065,17 +1065,14 @@ CONTACT
 }
 
 body.services #contact .contact-left {
-    flex-direction: row;
-    gap: 0;
-    justify-content: center;
+    order: 2;
 }
 
 body.services #contact .contact-right {
-    flex-direction: column;
-    gap: 50px;
+    order: 1;
+    justify-content: center;
     align-items: center;
-    height: auto;
-    justify-content: flex-start;
+    height: 100%;
 }
 
 #contact h2 {
