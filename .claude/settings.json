@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(sed -i '' 's|href=\"#services\" onclick=\"closeMenu\\(\\)\">Services|href=\"/services.html\" onclick=\"closeMenu\\(\\)\">Services|g' /Users/nicoleb/Documents/Nicole/VS_Portfolio/website/index.html)",
+      "Bash(sed -i '' 's|href=\"/index.html#services\" onclick=\"closeMenu\\(\\)\">Services|href=\"/services.html\" onclick=\"closeMenu\\(\\)\">Services|g' /Users/nicoleb/Documents/Nicole/VS_Portfolio/website/respect-method.html)",
+      "Bash(sed -i '' 's|href=\"/index.html#services\" onclick=\"closeMenu\\(\\)\">Services|href=\"/services.html\" onclick=\"closeMenu\\(\\)\">Services|g' /Users/nicoleb/Documents/Nicole/VS_Portfolio/website/services.html)",
+      "Bash(sed -i '' 's|href=\"./index.html#services\" onclick=\"closeMenu\\(\\)\">Services|href=\"/services.html\" onclick=\"closeMenu\\(\\)\">Services|g' /Users/nicoleb/Documents/Nicole/VS_Portfolio/website/conditions.html)"
+    ]
+  }
+}

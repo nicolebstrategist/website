@@ -1052,16 +1052,30 @@ CONTACT
 
 #contact .contact-left {
     display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+
+#contact .contact-right {
+    display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
 }
 
-#contact .contact-right {
-    display: flex;
+body.services #contact .contact-left {
+    flex-direction: row;
+    gap: 0;
+    justify-content: center;
+}
+
+body.services #contact .contact-right {
     flex-direction: column;
     gap: 50px;
     align-items: center;
+    height: auto;
+    justify-content: flex-start;
 }
 
 #contact h2 {
