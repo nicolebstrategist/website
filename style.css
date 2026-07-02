@@ -690,7 +690,7 @@ PROGRAMMES
 .respect-method-inner {
     display: grid;
     grid-template-columns: 1.2fr 0.8fr;
-    gap: 30px;
+    gap: 10px;
     align-items: start;
     margin-top: 20px;
 }
@@ -1052,6 +1052,13 @@ CONTACT
 
 #contact .contact-left {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#contact .contact-right {
+    display: flex;
     flex-direction: column;
     gap: 50px;
     align-items: center;
@@ -1087,18 +1094,11 @@ CONTACT
     justify-content: center;
     width: max-content;
     padding: 14px 26px;
-    margin-top: 6px;
+    margin-top: 40px;
 }
 
 #contact .bee-icon {
     margin-top: 0;
-}
-
-#contact .contact-right {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
 }
 
 #contact .contact-image {
@@ -2333,7 +2333,7 @@ RESPONSIVE
 
     .respect-method-inner {
         grid-template-columns: 1fr;
-        gap: 30px;
+        gap: 10px;
     }
 
     .respect-method-text { order: 1; }
