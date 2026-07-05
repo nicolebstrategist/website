@@ -329,6 +329,17 @@ HERO
     font-size: 23px;
 }
 
+.hero-text ul {
+    list-style: disc;
+    padding-left: 1.2em;
+    margin-bottom: 20px;
+}
+
+.hero-text li {
+    margin-bottom: 6px;
+    text-align: left;
+}
+
 .hero-text p {
     margin-bottom: 14px;
     text-align: left;
